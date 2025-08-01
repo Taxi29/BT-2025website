@@ -97,18 +97,18 @@ const App = () => {
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            BT Content
+            Brian Thomas
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300">
-            Visual Storyteller & Creative Director
+            AI-powered Video Content Creator 
           </p>
           <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-400">
-            Crafting compelling narratives through the lens of innovation, bringing brands and stories to life through cinematic excellence and AI-powered creativity.
+            Bringing brands and stories to life through attention grabbing videos, graphics, logos and images with AI-powered creativity.
           </p>
           <div className="flex justify-center space-x-6">
             <a href="mailto:btcontentai@gmail.com" className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors">
               <Mail size={20} />
-              <span>Get In Touch</span>
+              <span>Contact Me</span>
             </a>
             <a href="#portfolio" className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors">
               <Play size={20} />
@@ -125,7 +125,7 @@ const App = () => {
             Featured Work
           </h2>
           <p className="text-xl text-center mb-12 text-gray-400 max-w-2xl mx-auto">
-            A curated selection of projects spanning commercial, documentary, and creative content with AI-enhanced production.
+            A curated selection of projects spanning broadcast, digital, and corporate content with AI-enhanced production.
           </p>
 
           {/* Category Filter */}
@@ -213,9 +213,10 @@ const App = () => {
       {/* About Section */}
       <section className="py-20 px-6 bg-black/30">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 text-white">About</h2>
+          <h2 className="text-4xl font-bold mb-8 text-white">Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            With a passion for visual storytelling and cutting-edge technology, I specialize in creating compelling content that resonates with audiences across digital platforms. My work spans commercial productions, documentaries, and creative projects, enhanced with AI-powered workflows for brands and artists worldwide.
+            Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, CSS, Davinci Resolve, Eleven Labs, Google Veo3, HTML, Javascript, Midjourney, React, Runway, Eleven Labs,  DSLR & mirrorless cameras, 
+            in addition to discovering new tools every week. 
           </p>
           <div className="flex justify-center space-x-6">
             <a href="https://linkedin.com/in/yourprofile" className="text-gray-400 hover:text-purple-400 transition-colors">
