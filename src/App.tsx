@@ -106,7 +106,6 @@ const App = () => {
             Your brands and your stories need attention grabbing videos, graphics, images, logos and websites that use AI-powered creativity.
           </p>
           <div className="flex justify-center space-x-6">
-            <div className="flex justify-center space-x-6">
             <a href="https://mail.google.com/mail/?view=cm&to=btcontentai@gmail.com&su=Portfolio%20Inquiry" 
             target="_blank"
               rel="noopener noreferrer"
