@@ -103,7 +103,7 @@ const App = () => {
             AI-powered Video Content Creator 
           </p>
           <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-400">
-            Bringing brands and stories to life through attention grabbing videos, graphics, logos and images with AI-powered creativity.
+            Your brands and your stories need attention grabbing videos, graphics, logos and images with AI-powered creativity.
           </p>
           <div className="flex justify-center space-x-6">
             <a href="mailto:btcontentai@gmail.com" className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors">
@@ -213,17 +213,20 @@ const App = () => {
       {/* About Section */}
       <section className="py-20 px-6 bg-black/30">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 text-white">Tools</h2>
+          <h2 className="text-4xl font-bold mb-8 text-white">AI Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, CSS, Davinci Resolve, Eleven Labs, Google Veo3, HTML, Javascript, Midjourney, React, Runway, Eleven Labs,  DSLR & mirrorless cameras, 
-            in addition to discovering new tools every week. 
+            Eleven Labs, Kling, Midjourney, Runway, Sora </p>
+          <h2 className="text-4xl font-bold mb-8 text-white">Video Creation Tools</h2>
+          <p className="text-lg text-gray-300 leading-relaxed mb-8">
+            Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci Resolve, DSLR & Mirrorless cameras
+          </p>
+          <h2 className="text-4xl font-bold mb-8 text-white">Web Development Tools</h2>
+          <p className="text-lg text-gray-300 leading-relaxed mb-8">
+            CSS, HTML, JavaScript, React, Node.JS, SQL
           </p>
           <div className="flex justify-center space-x-6">
             <a href="https://linkedin.com/in/yourprofile" className="text-gray-400 hover:text-purple-400 transition-colors">
               <Linkedin size={24} />
-            </a>
-            <a href="https://twitter.com/yourhandle" className="text-gray-400 hover:text-purple-400 transition-colors">
-              <Twitter size={24} />
             </a>
             <a href="mailto:btcontentai@gmail.com" className="text-gray-400 hover:text-purple-400 transition-colors">
               <Mail size={24} />
