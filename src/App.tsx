@@ -16,12 +16,12 @@ const App = () => {
       year: '2024'
     },
     {
-      id: '987654321',
-      title: 'Documentary Short',
-      description: 'An intimate documentary exploring human stories.',
-      category: 'Documentary',
+      id: '710342045',
+      title: 'Adobe AfterEffects',
+      description: 'Compilation of branded opens, lower thirds and motion graphics for national television.',
+      category: 'Motion Graphics',
       thumbnail: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=225&fit=crop',
-      year: '2023'
+      year: '2010-2022'
     },
     {
       id: '456789123',
@@ -103,7 +103,7 @@ const App = () => {
             AI-powered Video Content Creator 
           </p>
           <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-400">
-            Your brands and your stories need attention grabbing videos, graphics, logos and images with AI-powered creativity.
+            Your brands and your stories need attention grabbing videos, graphics, images, logos and websites that use AI-powered creativity.
           </p>
           <div className="flex justify-center space-x-6">
             <a href="mailto:btcontentai@gmail.com" className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors">
@@ -216,11 +216,11 @@ const App = () => {
           <h2 className="text-4xl font-bold mb-8 text-white">AI Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
             Eleven Labs, Kling, Midjourney, Runway, Sora </p>
-          <h2 className="text-4xl font-bold mb-8 text-white">Video Creation Tools</h2>
+          <h2 className="text-4xl font-bold mb-8 text-white">Video Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
             Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci Resolve, DSLR & Mirrorless cameras
           </p>
-          <h2 className="text-4xl font-bold mb-8 text-white">Web Development Tools</h2>
+          <h2 className="text-4xl font-bold mb-8 text-white">Coding Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
             CSS, HTML, JavaScript, React, Node.JS, SQL
           </p>
