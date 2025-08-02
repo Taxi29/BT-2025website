@@ -17,10 +17,10 @@ const App = () => {
     },
     {
       id: '710342045',
-      title: 'Adobe AfterEffects',
+      title: 'Motion Graphics',
       description: 'Compilation of branded opens, lower thirds and motion graphics for national television.',
-      category: 'Motion Graphics',
-      thumbnail: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=225&fit=crop',
+      category: 'Adobe AfterEffects',
+      thumbnail: '/Thumbnail_Images/MauryGraphicsThumbnail.jpg',
       year: '2010-2022'
     },
     {
