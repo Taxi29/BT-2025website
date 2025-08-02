@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, ExternalLink, Mail, Linkedin, Twitter, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Play, ExternalLink, Mail, Linkedin, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState<any>(null);
