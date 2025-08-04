@@ -9,10 +9,27 @@ const App = () => {
   const videos = [
     {
       id: '123456789',
-      title: 'Commercial Project 2024',
-      description: 'A stunning commercial piece showcasing modern cinematography techniques.',
-      category: 'Commercial',
+      title: 'AI-Powered Content Sizzle Reel',
+      description: 'Compilation of custom AI-generated content.',
+      category: 'AI Content',
       thumbnail: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=225&fit=crop',
+      year: '2024'
+    },
+    {
+      id: '789123456',
+      title: 'Digital Content Sizzle Reel',
+      description: 'Compilation of digital platform content.',
+      category: 'Digital Content',
+      thumbnail: 'https://images.unsplash.com/photo-1551651194-3a4129d40ff8?w=400&h=225&fit=crop',
+      year: '2023'
+
+    },
+    {
+      id: '456789123',
+      title: 'Corporate Content Sizzle Reel',
+      description: 'Compilation of corporate content.',
+      category: 'Corporate Content',
+      thumbnail: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=225&fit=crop',
       year: '2024'
     },
     {
@@ -22,22 +39,6 @@ const App = () => {
       category: 'Adobe AfterEffects',
       thumbnail: '/Thumbnail_Images/MauryGraphicsThumb.jpg',
       year: '2010-2022'
-    },
-    {
-      id: '456789123',
-      title: 'Music Video',
-      description: 'Creative music video with innovative visual effects.',
-      category: 'Music Video',
-      thumbnail: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=225&fit=crop',
-      year: '2024'
-    },
-    {
-      id: '789123456',
-      title: 'Brand Story',
-      description: 'Compelling brand narrative for a tech startup.',
-      category: 'Branding',
-      thumbnail: 'https://images.unsplash.com/photo-1551651194-3a4129d40ff8?w=400&h=225&fit=crop',
-      year: '2023'
     },
     {
       id: '321654987',
@@ -103,16 +104,18 @@ const App = () => {
             AI-powered Video Content Creator 
           </p>
           <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-400">
-            Your brands and your stories need attention grabbing videos, graphics, images, logos and websites that use AI-powered creativity.
+            Your brand needs attention grabbing videos, graphics, images, logos and websites that use AI-powered creativity.
           </p>
           <div className="flex justify-center space-x-6">
-            <a href="https://mail.google.com/mail/?view=cm&to=btcontentai@gmail.com&su=Portfolio%20Inquiry" 
-            target="_blank"
-              rel="noopener noreferrer"
-            className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors">
-            <Mail size={20} />
-              <span>Contact Me</span>
-            </a>
+          <button 
+            onClick={() => {
+            navigator.clipboard.writeText('btcontentai@gmail.com');
+            alert('Email copied to clipboard!');
+          }}
+  className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors">
+  <Mail size={20} />
+  <span>Copy Email</span>
+</button>
             <a href="#portfolio" className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors">
               <Play size={20} />
               <span>View Work</span>
@@ -218,14 +221,14 @@ const App = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-white">AI Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            Eleven Labs, Kling, Midjourney, Runway, Sora </p>
+            Agentic AI, Eleven Labs, ChatGPT, Claude, Figma AI, Kling, Luma AI, Midjourney, Runway, Sora, Synthesia, Topaz, Veo, Vibe Coding, Weavy </p>
           <h2 className="text-4xl font-bold mb-8 text-white">Video Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci Resolve, DSLR & Mirrorless cameras
+            Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci Resolve, DSLR/Mirrorless cameras(Canon, Sony, Blackmagic), Media Encoding, OBS Studio, Studio Lighting, Teleprompting
           </p>
-          <h2 className="text-4xl font-bold mb-8 text-white">Coding Tools</h2>
+          <h2 className="text-4xl font-bold mb-8 text-white">Coding Website Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            CSS, HTML, JavaScript, React, Node.JS, SQL
+            CSS, DevTools, GitHub, HTML, JavaScript, React, Netlify, MongoDB, Next.JS, Node.JS, SQL, VS Code
           </p>
           <div className="flex justify-center space-x-6">
             <a href="https://linkedin.com/in/yourprofile" className="text-gray-400 hover:text-purple-400 transition-colors">
