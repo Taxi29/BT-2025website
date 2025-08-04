@@ -40,23 +40,23 @@ const App = () => {
       thumbnail: '/Thumbnail_Images/MauryGraphicsThumb.jpg',
       year: '2010-2022'
     },
-    {
-      id: '321654987',
-      title: 'Event Coverage',
-      description: 'Dynamic event coverage with multiple camera angles.',
-      category: 'Event',
-      thumbnail: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=225&fit=crop',
-      year: '2024'
-    },
-    {
-      id: '654987321',
-      title: 'Product Showcase',
-      description: 'High-end product visualization with motion graphics.',
-      category: 'Product',
-      thumbnail: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400&h=225&fit=crop',
-      year: '2023'
-    }
-  ];
+    // {
+    //   id: '321654987',
+    //   title: 'Event Coverage',
+    //   description: 'Dynamic event coverage with multiple camera angles.',
+    //   category: 'Event',
+    //   thumbnail: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=225&fit=crop',
+    //   year: '2024'
+    // },
+    // {
+    //   id: '654987321',
+    //   title: 'Product Showcase',
+    //   description: 'High-end product visualization with motion graphics.',
+    //   category: 'Product',
+    //   thumbnail: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400&h=225&fit=crop',
+    //   year: '2023'
+    // }
+  ];//
 
   const categories = ['All', ...new Set(videos.map(video => video.category))];
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -107,15 +107,15 @@ const App = () => {
             Your brand needs attention grabbing videos, graphics, images, logos and websites that use AI-powered creativity.
           </p>
           <div className="flex justify-center space-x-6">
-          <button 
+        <button 
             onClick={() => {
             navigator.clipboard.writeText('btcontentai@gmail.com');
             alert('Email copied to clipboard!');
           }}
-  className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors">
-  <Mail size={20} />
-  <span>Copy Email</span>
-</button>
+          className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors">
+          <Mail size={20} />
+          <span>Copy Email</span>
+        </button>
             <a href="#portfolio" className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors">
               <Play size={20} />
               <span>View Work</span>
@@ -192,7 +192,7 @@ const App = () => {
           </div>
 
           {/* Pagination */}
-          {totalPages > 1 && (
+          {/* {totalPages > 1 && (
             <div className="flex justify-center items-center space-x-4">
               <button
                 onClick={prevPage}
@@ -212,7 +212,7 @@ const App = () => {
                 <ChevronRight size={24} />
               </button>
             </div>
-          )}
+          )} */}
         </div>
       </section>
 
