@@ -12,7 +12,7 @@ const App = () => {
       title: 'AI-Powered Content Sizzle Reel',
       description: 'Compilation of custom AI-generated content.',
       category: 'AI Content',
-      thumbnail: '/Thumbnail_Images/MauryGraphicsThumb.jpg',
+      thumbnail: '/Thumbnail_Images/AI-ContentThumbnail.jpg',
       year: '2024-2025'
     },
     {
