@@ -12,8 +12,8 @@ const App = () => {
       title: 'AI-Powered Content Sizzle Reel',
       description: 'Compilation of custom AI-generated content.',
       category: 'AI Content',
-      thumbnail: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=225&fit=crop',
-      year: '2024'
+      thumbnail: '/Thumbnail_Images/MauryGraphicsThumb.jpg',
+      year: '2024-2025'
     },
     {
       id: '789123456',
