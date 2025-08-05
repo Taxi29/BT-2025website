@@ -20,16 +20,16 @@ const App = () => {
       title: 'Digital Content Sizzle Reel',
       description: 'Compilation of digital platform content.',
       category: 'Digital Content',
-      thumbnail: 'https://images.unsplash.com/photo-1551651194-3a4129d40ff8?w=400&h=225&fit=crop',
+      thumbnail: '/DigitalContentThumb--TEMP',
       year: '2023'
 
     },
     {
-      id: '456789123',
+      id: '789123456',
       title: 'Corporate Content Sizzle Reel',
       description: 'Compilation of corporate content.',
       category: 'Corporate Content',
-      thumbnail: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=225&fit=crop',
+      thumbnail: '/CorporateContentThumb--TEMP',
       year: '2024'
     },
     {
