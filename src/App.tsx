@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, ExternalLink, Mail, Linkedin, /*ChevronLeft, ChevronRight*/ } from 'lucide-react';
+import { Play, ExternalLink, Mail, Linkedin, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState<any>(null);
@@ -192,8 +192,8 @@ const App = () => {
           </div>
 
           {/* Pagination */}
-          {/* {totalPages > 1 && (
-            <div className="flex justify-center items-center space-x-4">
+          {totalPages > 1 && (
+            <div className="hidden flex justify-center items-center space-x-4">
               <button
                 onClick={prevPage}
                 className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
@@ -212,7 +212,7 @@ const App = () => {
                 <ChevronRight size={24} />
               </button>
             </div>
-          )}*/}
+          )}
         </div>
       </section>
 
