@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, ExternalLink, Mail, Linkedin, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Play, ExternalLink, Mail, Linkedin, /*ChevronLeft, ChevronRight*/ } from 'lucide-react';
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState<any>(null);
@@ -8,7 +8,7 @@ const App = () => {
   // Sample videos - replace with your actual Vimeo video IDs and info
   const videos = [
     {
-      id: '123456789',
+      id: '1107255440',
       title: 'AI-Powered Content Sizzle Reel',
       description: 'Compilation of custom AI-generated content.',
       category: 'AI Content',
@@ -212,7 +212,7 @@ const App = () => {
                 <ChevronRight size={24} />
               </button>
             </div>
-          )} */}
+          )}*/}
         </div>
       </section>
 
