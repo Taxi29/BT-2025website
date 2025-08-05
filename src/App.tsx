@@ -107,7 +107,7 @@ const App = () => {
             Your brand needs attention grabbing videos, graphics, images, logos and websites that use AI-powered creativity.
           </p>
           <div className="flex justify-center space-x-6">
-        <button 
+        {/* <button 
             onClick={() => {
             navigator.clipboard.writeText('btcontentai@gmail.com');
             alert('Email copied to clipboard!');
@@ -115,10 +115,14 @@ const App = () => {
           className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors">
           <Mail size={20} />
           <span>Copy Email</span>
-        </button>
+        </button> */}
             <a href="#portfolio" className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors">
               <Play size={20} />
               <span>View Work</span>
+            </a>
+            <a href="#about" className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors">
+              <Play size={20} />
+              <span>View Tools</span>
             </a>
           </div>
         </div>
@@ -217,7 +221,7 @@ const App = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-6 bg-black/30">
+      <section id="about" className="py-20 px-6 bg-black/30">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-white">AI Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
