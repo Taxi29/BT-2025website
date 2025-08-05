@@ -20,7 +20,7 @@ const App = () => {
       title: 'Digital Content Sizzle Reel',
       description: 'Compilation of digital platform content.',
       category: 'Digital Content',
-      thumbnail: '/Thumbnail_Images/DigitalContentThumb--TEMP',
+      thumbnail: '/Thumbnail_Images/DigitalContentThumb--TEMP.jpg',
       year: '2023'
 
     },
@@ -29,7 +29,7 @@ const App = () => {
       title: 'Corporate Content Sizzle Reel',
       description: 'Compilation of corporate content.',
       category: 'Corporate Content',
-      thumbnail: '/Thumbnail_Images/CorporateContentThumb--TEMP',
+      thumbnail: '/Thumbnail_Images/CorporateContentThumb--TEMP.jpg',
       year: '2024'
     },
     {
