@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Play, ExternalLink, Mail, Linkedin, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const App = () => {
@@ -71,11 +71,17 @@ const App = () => {
   const currentVideos = filteredVideos.slice(startIndex, startIndex + videosPerPage);
 
   const openVideo = (video: any) => {
-    setSelectedVideo(video);
+    setSelectedVideo(video);    
+  // Add to browser history
+    window.history.pushState({ videoId: video.id }, '', `#video-${video.id}`);
   };
 
   const closeVideo = () => {
     setSelectedVideo(null);
+    // Go back in history or clear hash
+    if (window.location.hash) {
+      window.history.back();
+    }
   };
 
   const nextPage = () => {
@@ -90,6 +96,20 @@ const App = () => {
     setSelectedCategory(category);
     setCurrentPage(0);
   };
+
+  useEffect(() => {
+  const handlePopState = (event: PopStateEvent) => {
+    // Close video when back button is pressed
+    setSelectedVideo(null);
+  };
+
+  window.addEventListener('popstate', handlePopState);
+  
+  // Cleanup
+    return () => {
+    window.removeEventListener('popstate', handlePopState);
+    };
+    }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -235,12 +255,20 @@ const App = () => {
             CSS, DevTools, GitHub, HTML, JavaScript, React, Netlify, MongoDB, Next.JS, Node.JS, SQL, VS Code
           </p>
           <div className="flex justify-center space-x-6">
-            <a href="https://www.linkedin.com/in/brian-thomas-video/" className="text-gray-400 hover:text-purple-400 transition-colors">
+            <a href="https://www.linkedin.com/in/brian-thomas-video/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-purple-400 transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="mailto:btcontentai@gmail.com" className="text-gray-400 hover:text-purple-400 transition-colors">
+            <button 
+              onClick={() => {
+              navigator.clipboard.writeText('btcontentai@gmail.com');
+              alert('Email copied to clipboard');
+              }}
+            className="text-gray-400 hover:text-purple-400 transition-colors bg-transparent border-none cursor-pointer">
               <Mail size={24} />
-            </a>
+          </button>
           </div>
         </div>
       </section>
