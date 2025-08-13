@@ -235,7 +235,7 @@ const App = () => {
             CSS, DevTools, GitHub, HTML, JavaScript, React, Netlify, MongoDB, Next.JS, Node.JS, SQL, VS Code
           </p>
           <div className="flex justify-center space-x-6">
-            <a href="https://linkedin.com/in/yourprofile" className="text-gray-400 hover:text-purple-400 transition-colors">
+            <a href="https://www.linkedin.com/in/brian-thomas-video/" className="text-gray-400 hover:text-purple-400 transition-colors">
               <Linkedin size={24} />
             </a>
             <a href="mailto:btcontentai@gmail.com" className="text-gray-400 hover:text-purple-400 transition-colors">
