@@ -4,7 +4,7 @@ import { Play, ExternalLink, Mail, Linkedin, ChevronLeft, ChevronRight } from 'l
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState<any>(null);
   const [currentPage, setCurrentPage] = useState(0);
-  
+
   // Sample videos - replace with your actual Vimeo video IDs and info
   const videos = [
     {
@@ -286,7 +286,7 @@ const App = () => {
                 <button
                   onClick={prevPage}
                   className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
-                  disabled={currentPage === 0}
+                  disabled={currentPage <= 0}
                 >
                   <ChevronLeft size={24} />
                 </button>
@@ -296,7 +296,7 @@ const App = () => {
                 <button
                   onClick={nextPage}
                   className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
-                  disabled={currentPage === totalPages - 1}
+                  disabled={currentPage >= totalPages - 1}
                 >
                   <ChevronRight size={24} />
                 </button>
