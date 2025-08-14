@@ -217,7 +217,7 @@ const App = () => {
 
           {/* Pagination */}
           {totalPages > 1 && (
-            <div className="hidden flex justify-center items-center space-x-4">
+            <div className="flex justify-center items-center space-x-4">
               <button
                 onClick={prevPage}
                 className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
@@ -245,7 +245,7 @@ const App = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-white">AI Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            Agentic AI, Eleven Labs, ChatGPT, Claude, Figma AI, Kling, Luma AI, Midjourney, Runway, Sora, Synthesia, Topaz, Veo, Vibe Coding, Weavy </p>
+            Agentic AI, ChatGPT, Claude, Descript, Eleven Labs, Figma AI, Kling, Luma AI, Midjourney, Runway, Sora, Synthesia, Topaz, Veo, Vibe Coding, Weavy </p>
           <h2 className="text-4xl font-bold mb-8 text-white">Video Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
             Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci Resolve, DSLR/Mirrorless cameras(Canon, Sony, Blackmagic), Media Encoding, OBS Studio, Studio Lighting, Teleprompting
