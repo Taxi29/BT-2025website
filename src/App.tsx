@@ -208,9 +208,7 @@ const App = () => {
           </div>
         ))}
       </div>
-      </section>
-
-                    {/* Pagination */}
+        {/* Pagination */}
             {totalPages > 1 && (
               <div className="flex justify-center items-center space-x-4">
                 <button
@@ -232,6 +230,9 @@ const App = () => {
                 </button>
               </div>
             )}
+      </section>
+
+
 
             {/* About Section */}
           <section id="about" className="py-20 px-6 bg-black/30">
