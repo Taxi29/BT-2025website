@@ -154,47 +154,8 @@ const App = () => {
                 A curated selection of projects spanning broadcast, digital, and corporate content with AI-enhanced production.
               </p>
             </div>
-          </section>
-          {/* About Section */}
-          <section id="about" className="py-20 px-6 bg-black/30">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-8 text-white">AI Tools</h2>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                Agentic AI, ChatGPT, Claude, Descript, Eleven Labs, Figma AI, Kling, Luma AI, Midjourney, Runway, Sora, Synthesia, Topaz, Veo, Vibe Coding, Weavy
-              </p>
-              <h2 className="text-4xl font-bold mb-8 text-white">Video Tools</h2>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci Resolve, DSLR/Mirrorless cameras(Canon, Sony, Blackmagic), Media Encoding, OBS Studio, Studio Lighting, Teleprompting
-              </p>
-              <h2 className="text-4xl font-bold mb-8 text-white">Coding Website Tools</h2>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                CSS, DevTools, GitHub, HTML, JavaScript, React, Netlify, MongoDB, Next.JS, Node.JS, SQL, VS Code
-              </p>
-              <div className="flex justify-center space-x-6">
-                <a
-                  href="https://www.linkedin.com/in/brian-thomas-video/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-purple-400 transition-colors"
-                >
-                  <Linkedin size={24} />
-                </a>
-                <button
-                  onClick={() => {
-                    navigator.clipboard.writeText('btcontentai@gmail.com');
-                    alert('Email copied to clipboard');
-                  }}
-                  className="text-gray-400 hover:text-purple-400 transition-colors bg-transparent border-none cursor-pointer"
-                >
-                  <Mail size={24} />
-                </button>
-              </div>
-            </div>
-          </section>
-        </>
-      )}
       {/* Category Filter */}
-      <div className="flex flex-wrap justify-center gap-4 mb-12">
+       <div className="flex flex-wrap justify-center gap-4 mb-12">
         {categories.map((category) => (
           <button
             key={category}
@@ -248,6 +209,45 @@ const App = () => {
           </div>
         ))}
       </div>
+      </section>
+            {/* About Section */}
+          <section id="about" className="py-20 px-6 bg-black/30">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-8 text-white">AI Tools</h2>
+              <p className="text-lg text-gray-300 leading-relaxed mb-8">
+                Agentic AI, ChatGPT, Claude, Descript, Eleven Labs, Figma AI, Kling, Luma AI, Midjourney, Runway, Sora, Synthesia, Topaz, Veo, Vibe Coding, Weavy
+              </p>
+              <h2 className="text-4xl font-bold mb-8 text-white">Video Tools</h2>
+              <p className="text-lg text-gray-300 leading-relaxed mb-8">
+                Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci Resolve, DSLR/Mirrorless cameras(Canon, Sony, Blackmagic), Media Encoding, OBS Studio, Studio Lighting, Teleprompting
+              </p>
+              <h2 className="text-4xl font-bold mb-8 text-white">Coding Website Tools</h2>
+              <p className="text-lg text-gray-300 leading-relaxed mb-8">
+                CSS, DevTools, GitHub, HTML, JavaScript, React, Netlify, MongoDB, Next.JS, Node.JS, SQL, VS Code
+              </p>
+              <div className="flex justify-center space-x-6">
+                <a
+                  href="https://www.linkedin.com/in/brian-thomas-video/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-purple-400 transition-colors"
+                >
+                  <Linkedin size={24} />
+                </a>
+                <button
+                  onClick={() => {
+                    navigator.clipboard.writeText('btcontentai@gmail.com');
+                    alert('Email copied to clipboard');
+                  }}
+                  className="text-gray-400 hover:text-purple-400 transition-colors bg-transparent border-none cursor-pointer"
+                >
+                  <Mail size={24} />
+                </button>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* Page 2 - Vimeo Links Only */}
       {currentPage === 1 && (
