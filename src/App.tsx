@@ -269,6 +269,7 @@ const App = () => {
                 </button>
               </div>
             </div>
+            
           </section>
         </>
       )}
@@ -305,7 +306,30 @@ const App = () => {
               </div>
             </div>
           </div>
+                  {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center space-x-4">
+                <button
+                  onClick={prevPage}
+                  className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
+                  disabled={currentPage <= 0}
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                <span className="text-white">
+                  {currentPage + 1} of {totalPages}
+                </span>
+                <button
+                  onClick={nextPage}
+                  className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
+                  disabled={currentPage >= totalPages - 1}
+                >
+                  <ChevronRight size={24} />
+                </button>
+              </div>
+            )}
         </div>
+        
       )}
 
 
