@@ -61,12 +61,12 @@ const App = () => {
   const categories = ['All', ...new Set(videos.map(video => video.category))];
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const filteredVideos = selectedCategory === 'All' 
+    const filteredVideos = selectedCategory === 'All' 
     ? videos 
     : videos.filter((video: any) => video.category === selectedCategory);
 
   const videosPerPage = 4;
-  const totalPages = 2;
+  const totalPages = Math.ceil(filteredVideos.length / videosPerPage);
   const startIndex = currentPage * videosPerPage;
   const currentVideos = filteredVideos.slice(startIndex, startIndex + videosPerPage);
 
