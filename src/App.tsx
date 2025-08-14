@@ -141,7 +141,7 @@ const App = () => {
                   className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
                 >
                   <Play size={20} />
-                  <span>View Work</span>
+                  <span>View Content</span>
                 </a>
                 <a
                   href="#about"
@@ -157,7 +157,7 @@ const App = () => {
           <section id="portfolio" className="py-20 px-6">
             <div className="max-w-7xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
-                Featured Work
+                Featured Content
               </h2>
               <p className="text-xl text-center mb-12 text-gray-400 max-w-2xl mx-auto">
                 A curated selection of projects spanning broadcast, digital, and
@@ -297,7 +297,7 @@ const App = () => {
         <div className="min-h-screen py-20 px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
-              More Work
+              More Content
             </h2>
             <p className="text-xl text-center mb-16 text-gray-400">
               Additional projects available on Vimeo
