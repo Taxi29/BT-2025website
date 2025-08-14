@@ -63,7 +63,7 @@ const App = () => {
 
   const filteredVideos = selectedCategory === 'All' 
     ? videos 
-    : videos.filter(video => video.category === selectedCategory);
+    : videos.filter((video: any) => video.category === selectedCategory);
 
   const videosPerPage = 4;
   const totalPages = 2;
