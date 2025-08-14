@@ -280,6 +280,9 @@ const App = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      )}
 
 
             {/* Pagination */}
@@ -347,11 +350,9 @@ const App = () => {
                 </div>
               </div>
             )}
-          </div>
-        </div>
-      )}
       {/* End main return div for App */}
     </div>
+
   );
 }
 
