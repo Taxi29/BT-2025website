@@ -250,105 +250,107 @@ const App = () => {
       </div>
 
       {/* Page 2 - Vimeo Links Only */}
-{currentPage === 1 && (
-  <div className="min-h-screen py-20 px-6">
-    <div className="max-w-6xl mx-auto">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
-        More Work
-      </h2>
-      <p className="text-xl text-center mb-16 text-gray-400">
-        Additional projects available on Vimeo
-      </p>
-
-      {/* Social Media Section */}
-      <div className="mb-16">
-        <h3 className="text-3xl font-bold text-white mb-8">Social Media</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="https://vimeo.com/your-social-1" target="_blank" rel="noopener noreferrer"
-             className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center">
-            <span className="text-white font-semibold">Instagram Campaign 2024</span>
-            <div className="text-purple-400 mt-2">View on Vimeo →</div>
-          </a>
-          <a href="https://vimeo.com/your-social-2" target="_blank" rel="noopener noreferrer"
-             className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center">
-            <span className="text-white font-semibold">TikTok Series</span>
-            <div className="text-purple-400 mt-2">View on Vimeo →</div>
-          </a>
-          <a href="https://vimeo.com/your-social-3" target="_blank" rel="noopener noreferrer"
-             className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center">
-            <span className="text-white font-semibold">YouTube Shorts</span>
-            <div className="text-purple-400 mt-2">View on Vimeo →</div>
-          </a>
-        </div>
-      </div>
-
-      {/* Pagination */}
-      {totalPages > 1 && (
-        <div className="flex justify-center items-center space-x-4">
-          <button
-            onClick={prevPage}
-            className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
-            disabled={currentPage === 0}
-          >
-            <ChevronLeft size={24} />
-          </button>
-          <span className="text-white">
-            {currentPage + 1} of {totalPages}
-          </span>
-          <button
-            onClick={nextPage}
-            className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
-            disabled={currentPage === totalPages - 1}
-          >
-            <ChevronRight size={24} />
-          </button>
-        </div>
-      )}
-      {/* Video Modal */}
-      {selectedVideo && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-          <div className="relative w-full max-w-6xl bg-black rounded-2xl overflow-hidden">
-            <button
-              onClick={closeVideo}
-              className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-colors"
-            >
-              X
-            </button>
-            <div className="aspect-video">
-              <iframe
-                src={`https://player.vimeo.com/video/${selectedVideo.id}?autoplay=1&title=0&byline=0&portrait=0`}
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                title={`Video: ${selectedVideo.title}`}
-                className="w-full h-full"
-              ></iframe>
-            </div>
-            <div className="p-6 bg-gradient-to-r from-purple-900/50 to-pink-900/50">
-              <h3 className="text-2xl font-bold text-white mb-2">{selectedVideo.title}</h3>
-              <p className="text-gray-300 mb-4">{selectedVideo.description}</p>
-              <div className="flex items-center justify-between">
-                <span className="text-purple-400 bg-purple-400/20 px-3 py-1 rounded-full text-sm">
-                  {selectedVideo.category}
-                </span>
-                <a
-                  href={`https://vimeo.com/${selectedVideo.id}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
-                >
-                  <span>View on Vimeo</span>
-                  <ExternalLink size={16} />
+      {currentPage === 1 && (
+        <div className="min-h-screen py-20 px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
+              More Work
+            </h2>
+            <p className="text-xl text-center mb-16 text-gray-400">
+              Additional projects available on Vimeo
+            </p>
+            {/* Social Media Section */}
+            <div className="mb-16">
+              <h3 className="text-3xl font-bold text-white mb-8">Social Media</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="https://vimeo.com/your-social-1" target="_blank" rel="noopener noreferrer"
+                  className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center">
+                  <span className="text-white font-semibold">Instagram Campaign 2024</span>
+                  <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                </a>
+                <a href="https://vimeo.com/your-social-2" target="_blank" rel="noopener noreferrer"
+                  className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center">
+                  <span className="text-white font-semibold">TikTok Series</span>
+                  <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                </a>
+                <a href="https://vimeo.com/your-social-3" target="_blank" rel="noopener noreferrer"
+                  className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center">
+                  <span className="text-white font-semibold">YouTube Shorts</span>
+                  <div className="text-purple-400 mt-2">View on Vimeo →</div>
                 </a>
               </div>
             </div>
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center space-x-4">
+                <button
+                  onClick={prevPage}
+                  className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
+                  disabled={currentPage === 0}
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                <span className="text-white">
+                  {currentPage + 1} of {totalPages}
+                </span>
+                <button
+                  onClick={nextPage}
+                  className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
+                  disabled={currentPage === totalPages - 1}
+                >
+                  <ChevronRight size={24} />
+                </button>
+              </div>
+            )}
+            {/* Video Modal */}
+            {selectedVideo && (
+              <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+                <div className="relative w-full max-w-6xl bg-black rounded-2xl overflow-hidden">
+                  <button
+                    onClick={closeVideo}
+                    className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-colors"
+                  >
+                    X
+                  </button>
+                  <div className="aspect-video">
+                    <iframe
+                      src={`https://player.vimeo.com/video/${selectedVideo.id}?autoplay=1&title=0&byline=0&portrait=0`}
+                      width="100%"
+                      height="100%"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowFullScreen
+                      title={`Video: ${selectedVideo.title}`}
+                      className="w-full h-full"
+                    ></iframe>
+                  </div>
+                  <div className="p-6 bg-gradient-to-r from-purple-900/50 to-pink-900/50">
+                    <h3 className="text-2xl font-bold text-white mb-2">{selectedVideo.title}</h3>
+                    <p className="text-gray-300 mb-4">{selectedVideo.description}</p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-purple-400 bg-purple-400/20 px-3 py-1 rounded-full text-sm">
+                        {selectedVideo.category}
+                      </span>
+                      <a
+                        href={`https://vimeo.com/${selectedVideo.id}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+                      >
+                        <span>View on Vimeo</span>
+                        <ExternalLink size={16} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
+      {/* End main return div for App */}
     </div>
   );
-};
+}
 
 export default App;
