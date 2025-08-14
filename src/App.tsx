@@ -66,7 +66,7 @@ const App = () => {
     : videos.filter((video: any) => video.category === selectedCategory);
 
   const videosPerPage = 4;
-  const totalPages = Math.ceil(filteredVideos.length / videosPerPage);
+  const totalPages = 2;
   const startIndex = currentPage * videosPerPage;
   const currentVideos = filteredVideos.slice(startIndex, startIndex + videosPerPage);
 
@@ -172,7 +172,7 @@ const App = () => {
       </div>
       {/* Video Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12 justify-items-center">
-        {currentVideos.map((video) => (
+        {filteredVideos.map((video) => (
           <div
             key={video.id}
             className="group cursor-pointer bg-white/5 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300 hover:scale-105"
