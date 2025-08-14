@@ -65,10 +65,9 @@ const App = () => {
     ? videos 
     : videos.filter((video: any) => video.category === selectedCategory);
 
-  const videosPerPage = 4;
+
   const totalPages = 2;
-  const startIndex = currentPage * videosPerPage;
-  const currentVideos = filteredVideos.slice(startIndex, startIndex + videosPerPage);
+
 
   const openVideo = (video: any) => {
     setSelectedVideo(video);    
