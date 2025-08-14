@@ -66,7 +66,7 @@ const App = () => {
     : videos.filter(video => video.category === selectedCategory);
 
   const videosPerPage = 4;
-  const totalPages = Math.ceil(filteredVideos.length / videosPerPage);
+  const totalPages = 2;
   const startIndex = currentPage * videosPerPage;
   const currentVideos = filteredVideos.slice(startIndex, startIndex + videosPerPage);
 
@@ -111,6 +111,8 @@ const App = () => {
     };
     }, []);
 
+    
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Hero Section */}
@@ -127,7 +129,8 @@ const App = () => {
             Your brand needs attention grabbing videos, graphics, images, logos and websites that use AI-powered creativity.
           </p>
           <div className="flex justify-center space-x-6">
-        {/* <button 
+            {/* Email Section */}
+        {<button 
             onClick={() => {
             navigator.clipboard.writeText('btcontentai@gmail.com');
             alert('Email copied to clipboard!');
@@ -135,7 +138,7 @@ const App = () => {
           className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors">
           <Mail size={20} />
           <span>Copy Email</span>
-        </button> */}
+        </button>}
             <a href="#portfolio" className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors">
               <Play size={20} />
               <span>View Work</span>
