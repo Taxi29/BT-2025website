@@ -31,11 +31,11 @@ const App = () => {
       year: "2023",
     },
     {
-      id: "789123456",
+      id: "1110965103",
       title: "Corporate Content Sizzle Reel",
       description: "Compilation of corporate content.",
       category: "Corporate Content",
-      thumbnail: "/Thumbnail_Images/CorporateContentThumb--TEMP.jpg",
+      thumbnail: "/Thumbnail_Images/CorporateContentSizzle--THUMB.jpg",
       year: "2024",
     },
     {
