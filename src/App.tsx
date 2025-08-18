@@ -35,7 +35,7 @@ const App = () => {
       title: "Corporate Content Sizzle Reel",
       description: "Compilation of corporate content.",
       category: "Corporate Content",
-      thumbnail: "/Thumbnail_Images/CorporateContentSizzle--THUMB.jpg",
+      thumbnail: "/Thumbnail_Images/CorporateContentSizzle--THUMB.png",
       year: "2008-2024",
     },
     {
