@@ -36,7 +36,7 @@ const App = () => {
       description: "Compilation of corporate content.",
       category: "Corporate Content",
       thumbnail: "/Thumbnail_Images/CorporateContentSizzle--THUMB.jpg",
-      year: "2024",
+      year: "2008-2024",
     },
     {
       id: "710342045",
