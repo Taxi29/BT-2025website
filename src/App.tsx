@@ -377,7 +377,7 @@ const App = () => {
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
                 <span className="text-white font-semibold">
-                  YouTube Originals
+                  YouTube Original Series
                 </span>
                 <div className="text-purple-400 mt-2">View on YouTube →</div>
               </a>
