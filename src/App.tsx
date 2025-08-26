@@ -297,14 +297,14 @@ const App = () => {
         <div className="min-h-screen py-20 px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
-              More Content
+              Additional Content
             </h2>
             <p className="text-xl text-center mb-16 text-gray-400">
-              Additional video content available on Vimeo
+              More specific genre content available upon request
             </p>
             {/* Corporate Section */}
             <div className="mb-16">
-              <h3 className="text-3xl font-bold text-white mb-8">Corporate</h3>
+              <h3 className="text-3xl font-bold text-white mb-8">Corporate Content</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <a
                   href="https://vimeo.com/758023364"
@@ -345,7 +345,7 @@ const App = () => {
           {/* Social Media Section */}
           <div className="mb-16">
             <h3 className="text-3xl font-bold text-white mb-8">
-              Digital Media
+              Digital Content
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <a
@@ -385,7 +385,7 @@ const App = () => {
           </div>
           {/* Broadcast Section */}
           <div className="mb-16">
-            <h3 className="text-3xl font-bold text-white mb-8">Broadcast</h3>
+            <h3 className="text-3xl font-bold text-white mb-8">Broadcast Content</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <a
                 href="https://vimeo.com/740051380"
@@ -416,7 +416,7 @@ const App = () => {
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
                 <span className="text-white font-semibold">
-                  National Television Promo
+                  NBC National Television Promo
                 </span>
                 <div className="text-purple-400 mt-2">View on Vimeo →</div>
               </a>
