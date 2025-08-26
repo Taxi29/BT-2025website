@@ -329,13 +329,13 @@ const App = () => {
                   <div className="text-purple-400 mt-2">View on Vimeo →</div>
                 </a>
                 <a
-                  href="https://vimeo.com/469030095"
+                  href="https://vimeo.com/manage/videos/86842569"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
                 >
                   <span className="text-white font-semibold">
-                    Non-Profit Explainer
+                    Trade Conference Welcome Video
                   </span>
                   <div className="text-purple-400 mt-2">View on Vimeo →</div>
                 </a>
