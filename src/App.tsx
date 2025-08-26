@@ -366,7 +366,7 @@ const App = () => {
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
                 <span className="text-white font-semibold">
-                  Fitness Influencers' Sales Pitch
+                  Fitness Influencer's Sales Video
                 </span>
                 <div className="text-purple-400 mt-2">View on Vimeo →</div>
               </a>
