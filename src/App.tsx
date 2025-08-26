@@ -262,7 +262,7 @@ const App = () => {
                 Teleprompting
               </p>
               <h2 className="text-4xl font-bold mb-8 text-white">
-                Coding Website Tools
+                Website Coding Tools
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
                 CSS, DevTools, GitHub, HTML, JavaScript, React, Netlify,
@@ -300,88 +300,8 @@ const App = () => {
               More Content
             </h2>
             <p className="text-xl text-center mb-16 text-gray-400">
-              Additional projects available on Vimeo
+              Additional video content available on Vimeo
             </p>
-            {/* Social Media Section */}
-            <div className="mb-16">
-              <h3 className="text-3xl font-bold text-white mb-8">
-                Social Media
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a
-                  href="https://vimeo.com/your-social-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
-                >
-                  <span className="text-white font-semibold">
-                    Instagram Campaign 2024
-                  </span>
-                  <div className="text-purple-400 mt-2">View on Vimeo →</div>
-                </a>
-                <a
-                  href="https://vimeo.com/your-social-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
-                >
-                  <span className="text-white font-semibold">
-                    TikTok Series
-                  </span>
-                  <div className="text-purple-400 mt-2">View on Vimeo →</div>
-                </a>
-                <a
-                  href="https://vimeo.com/your-social-3"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
-                >
-                  <span className="text-white font-semibold">
-                    YouTube Shorts
-                  </span>
-                  <div className="text-purple-400 mt-2">View on Vimeo →</div>
-                </a>
-              </div>
-            </div>
-            {/* Broadcast Section */}
-            <div className="mb-16">
-              <h3 className="text-3xl font-bold text-white mb-8">Broadcast</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a
-                  href="https://vimeo.com/your-broadcast-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
-                >
-                  <span className="text-white font-semibold">
-                    News Package 2024
-                  </span>
-                  <div className="text-purple-400 mt-2">View on Vimeo →</div>
-                </a>
-                <a
-                  href="https://vimeo.com/your-broadcast-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
-                >
-                  <span className="text-white font-semibold">
-                    Live Event Coverage
-                  </span>
-                  <div className="text-purple-400 mt-2">View on Vimeo →</div>
-                </a>
-                <a
-                  href="https://vimeo.com/your-broadcast-3"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
-                >
-                  <span className="text-white font-semibold">
-                    Documentary Feature
-                  </span>
-                  <div className="text-purple-400 mt-2">View on Vimeo →</div>
-                </a>
-              </div>
-            </div>
             {/* Corporate Section */}
             <div className="mb-16">
               <h3 className="text-3xl font-bold text-white mb-8">Corporate</h3>
@@ -420,6 +340,82 @@ const App = () => {
                   <div className="text-purple-400 mt-2">View on Vimeo →</div>
                 </a>
               </div>
+            </div>
+          </div>
+          {/* Social Media Section */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-white mb-8">
+              Digital Media
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <a
+                href="https://www.youtube.com/watch?v=VGX8T_4fY_o"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
+              >
+                <span className="text-white font-semibold">
+                  SonyMusic/NBCU Viral Marketing Collab
+                </span>
+                <div className="text-purple-400 mt-2">View on YouTube →</div>
+              </a>
+              <a
+                href="https://vimeo.com/your-social-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
+              >
+                <span className="text-white font-semibold">TikTok Series</span>
+                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+              </a>
+              <a
+                href="https://vimeo.com/your-social-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
+              >
+                <span className="text-white font-semibold">YouTube Shorts</span>
+                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+              </a>
+            </div>
+          </div>
+          {/* Broadcast Section */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-white mb-8">Broadcast</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <a
+                href="https://vimeo.com/your-broadcast-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
+              >
+                <span className="text-white font-semibold">
+                  News Package 2024
+                </span>
+                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+              </a>
+              <a
+                href="https://vimeo.com/your-broadcast-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
+              >
+                <span className="text-white font-semibold">
+                  Live Event Coverage
+                </span>
+                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+              </a>
+              <a
+                href="https://vimeo.com/your-broadcast-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
+              >
+                <span className="text-white font-semibold">
+                  Documentary Feature
+                </span>
+                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+              </a>
             </div>
           </div>
           {/* Pagination */}
