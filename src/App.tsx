@@ -307,35 +307,35 @@ const App = () => {
               <h3 className="text-3xl font-bold text-white mb-8">Corporate</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <a
-                  href="https://vimeo.com/your-corporate-1"
+                  href="https://vimeo.com/758023364"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
                 >
                   <span className="text-white font-semibold">
-                    Company Culture Video
+                    Lexis Nexis Training Series
                   </span>
                   <div className="text-purple-400 mt-2">View on Vimeo →</div>
                 </a>
                 <a
-                  href="https://vimeo.com/your-corporate-2"
+                  href="https://vimeo.com/manage/videos/707804864"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
                 >
                   <span className="text-white font-semibold">
-                    Product Launch
+                    Travel Sales Video
                   </span>
                   <div className="text-purple-400 mt-2">View on Vimeo →</div>
                 </a>
                 <a
-                  href="https://vimeo.com/your-corporate-3"
+                  href="https://vimeo.com/469030095"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
                 >
                   <span className="text-white font-semibold">
-                    Training Series
+                    Non-Profit Explainer
                   </span>
                   <div className="text-purple-400 mt-2">View on Vimeo →</div>
                 </a>
@@ -355,27 +355,31 @@ const App = () => {
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
                 <span className="text-white font-semibold">
-                  SonyMusic/NBCU Viral Marketing Collab
+                  SonyMusic/NBCU Marketing
                 </span>
                 <div className="text-purple-400 mt-2">View on YouTube →</div>
               </a>
               <a
-                href="https://vimeo.com/your-social-2"
+                href="https://vimeo.com/712391239?share=copy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
-                <span className="text-white font-semibold">TikTok Series</span>
+                <span className="text-white font-semibold">
+                  Non-Profit Instagram Post
+                </span>
                 <div className="text-purple-400 mt-2">View on Vimeo →</div>
               </a>
               <a
-                href="https://vimeo.com/your-social-3"
+                href="https://www.youtube.com/watch?v=_CV4DOdeFxU"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
-                <span className="text-white font-semibold">YouTube Shorts</span>
-                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                <span className="text-white font-semibold">
+                  YouTube Originals
+                </span>
+                <div className="text-purple-400 mt-2">View on YouTube →</div>
               </a>
             </div>
           </div>
@@ -384,35 +388,35 @@ const App = () => {
             <h3 className="text-3xl font-bold text-white mb-8">Broadcast</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <a
-                href="https://vimeo.com/your-broadcast-1"
+                href="https://vimeo.com/740051380"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
                 <span className="text-white font-semibold">
-                  News Package 2024
+                  HBO Documentary Films Pitch
                 </span>
                 <div className="text-purple-400 mt-2">View on Vimeo →</div>
               </a>
               <a
-                href="https://vimeo.com/your-broadcast-2"
+                href="https://vimeo.com/551248645?share=copy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
                 <span className="text-white font-semibold">
-                  Live Event Coverage
+                  True Crime Stories
                 </span>
                 <div className="text-purple-400 mt-2">View on Vimeo →</div>
               </a>
               <a
-                href="https://vimeo.com/your-broadcast-3"
+                href="https://vimeo.com/manage/videos/758039937"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
                 <span className="text-white font-semibold">
-                  Documentary Feature
+                  National Television Promo
                 </span>
                 <div className="text-purple-400 mt-2">View on Vimeo →</div>
               </a>
