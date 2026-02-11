@@ -273,50 +273,50 @@ const App = () => {
               </a>
             </div>
           </div>
+
+          {/* Corporate Section */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-white mb-8">
+              Corporate Content
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <a
+                href="https://vimeo.com/758023364"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
+              >
+                <span className="text-white font-semibold">
+                  Lexis Nexis Training Series
+                </span>
+                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+              </a>
+              <a
+                href="https://vimeo.com/469030095"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
+              >
+                <span className="text-white font-semibold">
+                  Non-Profit Fundraising
+                </span>
+                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+              </a>
+              <a
+                href="https://vimeo.com/manage/videos/86842569"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
+              >
+                <span className="text-white font-semibold">
+                  Trade Conference Welcome Video
+                </span>
+                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-
-      {/* Corporate Section */}
-      <div className="mb-16">
-        <h3 className="text-3xl font-bold text-white mb-8">
-          Corporate Content
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a
-            href="https://vimeo.com/758023364"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
-          >
-            <span className="text-white font-semibold">
-              Lexis Nexis Training Series
-            </span>
-            <div className="text-purple-400 mt-2">View on Vimeo →</div>
-          </a>
-          <a
-            href="https://vimeo.com/469030095"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
-          >
-            <span className="text-white font-semibold">
-              Non-Profit Fundraising
-            </span>
-            <div className="text-purple-400 mt-2">View on Vimeo →</div>
-          </a>
-          <a
-            href="https://vimeo.com/manage/videos/86842569"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
-          >
-            <span className="text-white font-semibold">
-              Trade Conference Welcome Video
-            </span>
-            <div className="text-purple-400 mt-2">View on Vimeo →</div>
-          </a>
-        </div>
-      </div>
 
       {/* About Section */}
       <section id="about" className="py-20 px-6 bg-black/30">
