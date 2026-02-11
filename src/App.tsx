@@ -4,8 +4,6 @@ import {
   ExternalLink,
   Mail,
   Linkedin,
-  ChevronLeft,
-  ChevronRight,
 } from "lucide-react";
 
 const App = () => {
@@ -73,8 +71,6 @@ const App = () => {
       ? videos
       : videos.filter((video: any) => video.category === selectedCategory);
 
-  const totalPages = 2;
-
   const openVideo = (video: any) => {
     setSelectedVideo(video);
     // Add to browser history
@@ -89,17 +85,9 @@ const App = () => {
     }
   };
 
-  const nextPage = () => {
-    setCurrentPage((prev) => (prev + 1) % totalPages);
-  };
-
-  const prevPage = () => {
-    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
-  };
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
-    setCurrentPage(0);
   };
 
   useEffect(() => {
@@ -119,7 +107,6 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Page 1 - Main Portfolio with Hero & About */}
-      {currentPage === 0 && (
         <>
           {/* Hero Section */}
           <header className="relative h-screen flex items-center justify-center text-center text-white">
@@ -149,6 +136,12 @@ const App = () => {
                 >
                   <Play size={20} />
                   <span>View Tools</span>
+                </a>
+                                  <a href="#additional"
+                  className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
+                >
+                  <ExternalLink size={20} />
+                  <span>More Content</span>
                 </a>
               </div>
             </div>
@@ -220,29 +213,9 @@ const App = () => {
               ))}
             </div>
             {/* Pagination */}
-            {totalPages > 1 && (
-              <div className="flex justify-center items-center space-x-4">
-                <button
-                  onClick={prevPage}
-                  className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
-                  disabled={currentPage <= 0}
-                >
-                  <ChevronLeft size={24} />
-                </button>
-                <span className="text-white">
-                  {currentPage + 1} of {totalPages}
-                </span>
-                <button
-                  onClick={nextPage}
-                  className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
-                  disabled={currentPage >= totalPages - 1}
-                >
-                  <ChevronRight size={24} />
-                </button>
-              </div>
-            )}
-          </section>
 
+          </section>
+          </>
           {/* About Section */}
           <section id="about" className="py-20 px-6 bg-black/30">
             <div className="max-w-4xl mx-auto text-center">
@@ -290,7 +263,7 @@ const App = () => {
             </div>
           </section>
         </>
-      )}
+  
 
       {/* Page 2 - Vimeo Links Only */}
       {currentPage === 1 && (
@@ -300,11 +273,13 @@ const App = () => {
               Additional Content
             </h2>
             <p className="text-xl text-center mb-16 text-gray-400">
-              More specific genre content available upon request
+              More content available upon request
             </p>
             {/* Corporate Section */}
             <div className="mb-16">
-              <h3 className="text-3xl font-bold text-white mb-8">Corporate Content</h3>
+              <h3 className="text-3xl font-bold text-white mb-8">
+                Corporate Content
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <a
                   href="https://vimeo.com/758023364"
@@ -366,12 +341,12 @@ const App = () => {
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
                 <span className="text-white font-semibold">
-                  Fitness Influencer's Sales Video
+                  Karamo Show TikTok 
                 </span>
-                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                <div className="text-purple-400 mt-2">View on TikTok →</div>
               </a>
               <a
-                href="https://www.youtube.com/watch?v=_CV4DOdeFxU"
+                href="https://www.tiktok.com/@karamoshow"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
@@ -385,7 +360,9 @@ const App = () => {
           </div>
           {/* Broadcast Section */}
           <div className="mb-16">
-            <h3 className="text-3xl font-bold text-white mb-8">Broadcast Content</h3>
+            <h3 className="text-3xl font-bold text-white mb-8">
+              Broadcast Content
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <a
                 href="https://vimeo.com/740051380"
