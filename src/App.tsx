@@ -141,7 +141,7 @@ const App = () => {
         </div>
         {/* Video Grid */}
         <div
-          className={`grid grid-cols-1 ${filteredVideos.length > 1 ? "md:grid-cols-2" : ""} gap-8 mb-12 max-w-5xl mx-auto justify-items-center`}
+          className={`grid grid-cols-1 ${filteredVideos.length > 1 ? "md:grid-cols-2" : "max-w-md"} gap-8 mb-12 max-w-5xl mx-auto justify-items-center`}
         >
           {filteredVideos.map((video) => (
             <div
