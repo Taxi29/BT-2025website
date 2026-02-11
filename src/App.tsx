@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Play,
-  ExternalLink,
-  Mail,
-  Linkedin,
-} from "lucide-react";
+import { Play, ExternalLink, Mail, Linkedin } from "lucide-react";
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState<any>(null);
@@ -85,7 +80,6 @@ const App = () => {
     }
   };
 
-
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
   };
@@ -107,163 +101,158 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Page 1 - Main Portfolio with Hero & About */}
-        <>
-          {/* Hero Section */}
-          <header className="relative h-screen flex items-center justify-center text-center text-white">
-            <div className="absolute inset-0 bg-black/50"></div>
-            <div className="relative z-10 max-w-4xl mx-auto px-6">
-              <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Brian Thomas
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-300">
-                AI-powered Video Content Creator
-              </p>
-              <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-400">
-                Your brand needs attention grabbing videos, graphics, images,
-                logos and websites that use AI-powered creativity.
-              </p>
-              <div className="flex justify-center space-x-6">
-                <a
-                  href="#portfolio"
-                  className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
-                >
-                  <Play size={20} />
-                  <span>View Content</span>
-                </a>
-                <a
-                  href="#about"
-                  className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
-                >
-                  <Play size={20} />
-                  <span>View Tools</span>
-                </a>
-                                  <a href="#additional"
-                  className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
-                >
-                  <ExternalLink size={20} />
-                  <span>More Content</span>
-                </a>
-              </div>
+      <>
+        {/* Hero Section */}
+        <header className="relative h-screen flex items-center justify-center text-center text-white">
+          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="relative z-10 max-w-4xl mx-auto px-6">
+            <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Brian Thomas
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-gray-300">
+              AI-powered Video Content Creator
+            </p>
+            <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-400">
+              Your brand needs attention grabbing videos, graphics, images,
+              logos and websites that use AI-powered creativity.
+            </p>
+            <div className="flex justify-center space-x-6">
+              <a
+                href="#portfolio"
+                className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
+              >
+                <Play size={20} />
+                <span>View Content</span>
+              </a>
+              <a
+                href="#about"
+                className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
+              >
+                <Play size={20} />
+                <span>View Tools</span>
+              </a>
+              <a
+                href="#additional"
+                className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
+              >
+                <ExternalLink size={20} />
+                <span>More Content</span>
+              </a>
             </div>
-          </header>
-          {/* Portfolio Section */}
-          <section id="portfolio" className="py-20 px-6">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
-                Featured Content
-              </h2>
-              <p className="text-xl text-center mb-12 text-gray-400 max-w-2xl mx-auto">
-                A curated selection of projects spanning broadcast, digital, and
-                corporate content with AI-enhanced production.
-              </p>
-            </div>
-            {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => handleCategoryChange(category)}
-                  className={`px-6 py-2 rounded-full transition-all ${
-                    selectedCategory === category
-                      ? "bg-purple-600 text-white"
-                      : "bg-white/10 text-gray-300 hover:bg-white/20"
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
-            {/* Video Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12 justify-items-center">
-              {filteredVideos.map((video) => (
-                <div
-                  key={video.id}
-                  className="group cursor-pointer bg-white/5 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300 hover:scale-105"
-                  onClick={() => openVideo(video)}
-                >
-                  <div className="relative aspect-video overflow-hidden">
-                    <img
-                      src={video.thumbnail}
-                      alt={video.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
-                        <Play className="text-white ml-1" size={24} />
-                      </div>
-                    </div>
-                    <div className="absolute top-4 right-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm">
-                      {video.year}
+          </div>
+        </header>
+        {/* Portfolio Section */}
+        <section id="portfolio" className="py-20 px-6">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
+              Featured Content
+            </h2>
+            <p className="text-xl text-center mb-12 text-gray-400 max-w-2xl mx-auto">
+              A curated selection of projects spanning broadcast, digital, and
+              corporate content with AI-enhanced production.
+            </p>
+          </div>
+          {/* Category Filter */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => handleCategoryChange(category)}
+                className={`px-6 py-2 rounded-full transition-all ${
+                  selectedCategory === category
+                    ? "bg-purple-600 text-white"
+                    : "bg-white/10 text-gray-300 hover:bg-white/20"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+          {/* Video Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12 justify-items-center">
+            {filteredVideos.map((video) => (
+              <div
+                key={video.id}
+                className="group cursor-pointer bg-white/5 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300 hover:scale-105"
+                onClick={() => openVideo(video)}
+              >
+                <div className="relative aspect-video overflow-hidden">
+                  <img
+                    src={video.thumbnail}
+                    alt={video.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                      <Play className="text-white ml-1" size={24} />
                     </div>
                   </div>
-                  <div className="p-6">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-semibold text-white group-hover:text-purple-300 transition-colors">
-                        {video.title}
-                      </h3>
-                      <span className="text-sm text-purple-400 bg-purple-400/20 px-2 py-1 rounded">
-                        {video.category}
-                      </span>
-                    </div>
-                    <p className="text-gray-400 text-sm leading-relaxed">
-                      {video.description}
-                    </p>
+                  <div className="absolute top-4 right-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm">
+                    {video.year}
                   </div>
                 </div>
-              ))}
-            </div>
-            {/* Pagination */}
-
-          </section>
-          </>
-          {/* About Section */}
-          <section id="about" className="py-20 px-6 bg-black/30">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold mb-8 text-white">AI Tools</h2>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                Agentic AI, ChatGPT, Claude, Descript, Eleven Labs, Figma AI,
-                Kling, Luma AI, Midjourney, Runway, Sora, Synthesia, Topaz, Veo,
-                Vibe Coding, Weavy
-              </p>
-              <h2 className="text-4xl font-bold mb-8 text-white">
-                Video Tools
-              </h2>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer,
-                Davinci Resolve, DSLR/Mirrorless cameras(Canon, Sony,
-                Blackmagic), Media Encoding, OBS Studio, Studio Lighting,
-                Teleprompting
-              </p>
-              <h2 className="text-4xl font-bold mb-8 text-white">
-                Website Coding Tools
-              </h2>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                CSS, DevTools, GitHub, HTML, JavaScript, React, Netlify,
-                MongoDB, Next.JS, Node.JS, SQL, VS Code
-              </p>
-              <div className="flex justify-center space-x-6">
-                <a
-                  href="https://www.linkedin.com/in/brian-thomas-video/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-purple-400 transition-colors"
-                >
-                  <Linkedin size={24} />
-                </a>
-                <button
-                  onClick={() => {
-                    navigator.clipboard.writeText("btcontentai@gmail.com");
-                    alert("Email copied to clipboard");
-                  }}
-                  className="text-gray-400 hover:text-purple-400 transition-colors bg-transparent border-none cursor-pointer"
-                >
-                  <Mail size={24} />
-                </button>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-semibold text-white group-hover:text-purple-300 transition-colors">
+                      {video.title}
+                    </h3>
+                    <span className="text-sm text-purple-400 bg-purple-400/20 px-2 py-1 rounded">
+                      {video.category}
+                    </span>
+                  </div>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {video.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          </section>
-        </>
-  
+            ))}
+          </div>
+          {/* Pagination */}
+        </section>
+      </>
+      {/* About Section */}
+      <section id="about" className="py-20 px-6 bg-black/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 text-white">AI Tools</h2>
+          <p className="text-lg text-gray-300 leading-relaxed mb-8">
+            Agentic AI, ChatGPT, Claude, Descript, Eleven Labs, Figma AI, Kling,
+            Luma AI, Midjourney, Runway, Sora, Synthesia, Topaz, Veo, Vibe
+            Coding, Weavy
+          </p>
+          <h2 className="text-4xl font-bold mb-8 text-white">Video Tools</h2>
+          <p className="text-lg text-gray-300 leading-relaxed mb-8">
+            Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci
+            Resolve, DSLR/Mirrorless cameras(Canon, Sony, Blackmagic), Media
+            Encoding, OBS Studio, Studio Lighting, Teleprompting
+          </p>
+          <h2 className="text-4xl font-bold mb-8 text-white">
+            Website Coding Tools
+          </h2>
+          <p className="text-lg text-gray-300 leading-relaxed mb-8">
+            CSS, DevTools, GitHub, HTML, JavaScript, React, Netlify, MongoDB,
+            Next.JS, Node.JS, SQL, VS Code
+          </p>
+          <div className="flex justify-center space-x-6">
+            <a
+              href="https://www.linkedin.com/in/brian-thomas-video/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-purple-400 transition-colors"
+            >
+              <Linkedin size={24} />
+            </a>
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText("btcontentai@gmail.com");
+                alert("Email copied to clipboard");
+              }}
+              className="text-gray-400 hover:text-purple-400 transition-colors bg-transparent border-none cursor-pointer"
+            >
+              <Mail size={24} />
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/* Page 2 - Vimeo Links Only */}
       {currentPage === 1 && (
@@ -341,7 +330,7 @@ const App = () => {
                 className="bg-white/5 hover:bg-white/10 rounded-xl p-4 transition-colors text-center"
               >
                 <span className="text-white font-semibold">
-                  Karamo Show TikTok 
+                  Karamo Show TikTok
                 </span>
                 <div className="text-purple-400 mt-2">View on TikTok →</div>
               </a>
@@ -400,27 +389,6 @@ const App = () => {
             </div>
           </div>
           {/* Pagination */}
-          {totalPages > 1 && (
-            <div className="flex justify-center items-center space-x-4">
-              <button
-                onClick={prevPage}
-                className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
-                disabled={currentPage <= 0}
-              >
-                <ChevronLeft size={24} />
-              </button>
-              <span className="text-white">
-                {currentPage + 1} of {totalPages}
-              </span>
-              <button
-                onClick={nextPage}
-                className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white"
-                disabled={currentPage >= totalPages - 1}
-              >
-                <ChevronRight size={24} />
-              </button>
-            </div>
-          )}
         </div>
       )}
 
