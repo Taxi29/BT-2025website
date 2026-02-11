@@ -102,7 +102,7 @@ const App = () => {
               <span>View Content</span>
             </a>
             <a
-              href="#additional"
+              href="#about"
               className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
             >
               <Play size={20} />
