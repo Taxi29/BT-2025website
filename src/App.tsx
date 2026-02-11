@@ -3,7 +3,6 @@ import { Play, ExternalLink, Mail, Linkedin } from "lucide-react";
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState<any>(null);
-  const [currentPage, setCurrentPage] = useState(0);
 
   // Sample videos - replace with your actual Vimeo video IDs and info
   const videos = [
