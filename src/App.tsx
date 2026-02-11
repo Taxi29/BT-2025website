@@ -105,13 +105,6 @@ const App = () => {
               href="#additional"
               className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
             >
-              <ExternalLink size={20} />
-              <span>More Content</span>
-            </a>
-            <a
-              href="#about"
-              className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
-            >
               <Play size={20} />
               <span>View Tools</span>
             </a>
