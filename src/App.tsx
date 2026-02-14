@@ -90,8 +90,12 @@ const App = () => {
             AI-powered Video Content Creator
           </p>
           <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-400">
-            Your brand needs attention grabbing videos, graphics, images, logos
-            and websites that use AI-powered creativity.
+            I edit and create motion graphics that hook viewers in the first
+            three seconds and cut everything that doesn't move the story
+            forward. From national broadcast promos to social media campaigns,
+            I've spent 25+ years writing voiceovers, producing raw footage and
+            turning ideas into video content that grabs attention — and keeps
+            it.
           </p>
           <div className="flex justify-center space-x-6">
             <a
@@ -122,12 +126,8 @@ const App = () => {
             Featured Content
           </h2>
           <p className="text-xl text-center mb-12 text-gray-400 max-w-2xl mx-auto">
-            I edit and create motion graphics that hook viewers in the first
-            three seconds and cut everything that doesn't move the story
-            forward. From national broadcast promos to social media campaigns,
-            I've spent 25+ years writing voiceovers, producing raw footage and
-            turning ideas into video content that grabs attention — and keeps
-            it.
+            Your brand needs attention grabbing videos, graphics, images, logos
+            and websites that use AI-powered creativity.
           </p>
         </div>
         {/* Category Filter */}
