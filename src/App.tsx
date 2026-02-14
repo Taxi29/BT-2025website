@@ -109,7 +109,7 @@ const App = () => {
               <span>View Tools</span>
             </a>
           </div>
-          <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-300">
+          <p className="text-lg mt-16 mb-8 max-w-2xl mx-auto bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Emmy-nominated 25-year member of the Motion Picture Editors Guild. I
             edit and create motion graphics that hook viewers in the first three
             seconds and cut anything that doesn't move the story forward. From
