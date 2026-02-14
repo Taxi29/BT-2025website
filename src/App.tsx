@@ -122,9 +122,7 @@ const App = () => {
             Featured Content
           </h2>
           <p className="text-lg text-center mb-12 text-white max-w-2xl mx-auto">
-            From national broadcast promos to social media campaigns, I edit and
-            create motion graphics that hook viewers in the first three seconds
-            and cut everything that doesn't move the story forward.
+            Emmy-nominated 25-year member of the Motion Picture Editors Guild
           </p>
         </div>
         {/* Category Filter */}
@@ -189,11 +187,11 @@ const App = () => {
       {/* Additional Content Section */}
       <section id="additional" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mt-[-2rem] mb-12 text-white">
-            More Content Across Platforms
-          </h2>
           <p className="text-xl text-center mb-12 text-white max-w-2xl mx-auto">
-            I've spent 25+ years taking raw footage, writing voiceover copy, and
+            From NBC national broadcast promos to social media campaigns, I edit
+            and create motion graphics that hook viewers in the first three
+            seconds and cut everything that doesn't move the story forward. I've
+            spent 25+ years taking raw footage, writing voiceover copy, and
             turning ideas into video content that grabs attention — and keeps
             it.
           </p>
