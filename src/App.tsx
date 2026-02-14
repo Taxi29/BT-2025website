@@ -109,19 +109,19 @@ const App = () => {
               <span>View Tools</span>
             </a>
           </div>
-          <p className="text-xl mt-16 text-center text-gray-400 max-w-2xl mx-auto">
-            Emmy-nominated 25-year member of the Motion Picture Editors Guild
-          </p>
         </div>
       </header>
 
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
+          <p className="text-xl mt-16 text-center text-gray-400 max-w-2xl mx-auto">
+            Emmy-nominated 25-year member of the Motion Picture Editors Guild
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
             Featured Content
           </h2>
-          <p className="text-xl text-center mb-12 text-white max-w-2xl mx-auto">
+          <p className="text-lg text-center mb-12 text-white max-w-2xl mx-auto">
             From national broadcast promos to social media campaigns, I edit and
             create motion graphics that hook viewers in the first three seconds
             and cut everything that doesn't move the story forward.
