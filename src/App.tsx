@@ -108,22 +108,22 @@ const App = () => {
               <Play size={20} />
               <span>View Tools</span>
             </a>
+            <a
+              href="#bio"
+              className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
+            >
+              <Play size={20} />
+              <span>View Bio</span>
+            </a>
           </div>
         </div>
       </header>
-
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xl mt-16 text-center text-gray-400 max-w-2xl mx-auto">
-            Emmy-nominated 25-year member of the Motion Picture Editors Guild
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
             Featured Content
           </h2>
-          <p className="text-lg text-center mb-12 text-white max-w-2xl mx-auto">
-            Emmy-nominated 25-year member of the Motion Picture Editors Guild
-          </p>
         </div>
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -183,18 +183,12 @@ const App = () => {
           ))}
         </div>
       </section>
-
       {/* Additional Content Section */}
       <section id="additional" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <p className="text-xl text-center mb-12 text-white max-w-2xl mx-auto">
-            From NBC national broadcast promos to social media campaigns, I edit
-            and create motion graphics that hook viewers in the first three
-            seconds and cut everything that doesn't move the story forward. I've
-            spent 25+ years taking raw footage, writing voiceover copy, and
-            turning ideas into video content that grabs attention — and keeps
-            it.
-          </p>
+          <h2 className="text-4xl md:text-5xl mb-12 font-bold text-center mb-12 text-white">
+            Content Across Platforms
+          </h2>
 
           {/* Digital Content Section */}
           <div className="mb-16">
@@ -326,7 +320,6 @@ const App = () => {
           </p>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className="py-20 px-6 bg-black/30">
         <div className="max-w-4xl mx-auto text-center">
@@ -349,7 +342,106 @@ const App = () => {
             CSS, DevTools, GitHub, HTML, JavaScript, React, Netlify, MongoDB,
             Next.JS, Node.JS, SQL, VS Code
           </p>
-          <div className="flex justify-center space-x-6">
+        </div>
+      </section>
+
+      {/* Bio Section */}
+      <section id="bio" className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          {/* Bio Paragraph */}
+          <div className="mb-20 max-w-3xl mx-auto">
+            <p className="text-2xl text-center mb-8 text-white max-w-2xl mx-auto">
+              Emmy-nominated 25-year member of the{" "}
+              <span className="whitespace-nowrap">
+                Motion Picture Editors Guild
+              </span>
+            </p>
+            <div className="w-3/4 mx-auto h-px bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-40 mb-8"></div>
+            <p className="text-lg text-gray-300 max-w-4xl leading-relaxed mb-8 text-center">
+              From NBC national broadcast promos to social media campaigns, I
+              edit and create motion graphics that hook viewers in the first
+              three seconds and cut everything that doesn't move the story
+              forward. I've spent 25+ years taking raw footage, writing
+              voiceover copy, and turning ideas into video content that grabs
+              attention — and keeps it.
+            </p>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative">
+            {/* Vertical line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 opacity-40"></div>
+
+            {/* Timeline entries */}
+            <div className="space-y-16">
+              {/* Entry 1 - New York Mets (LEFT) */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-12 text-right">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    New York Mets
+                  </h3>
+                  <p className="text-purple-400 font-semibold mt-1">
+                    2000 – 2007
+                  </p>
+                </div>
+                {/* Center dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                <div className="w-1/2 pl-12"></div>
+              </div>
+
+              {/* Entry 2 - Maury Povich Show (RIGHT) */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-12"></div>
+                {/* Center dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                <div className="w-1/2 pl-12">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    Maury Povich Show{" "}
+                    <span className="text-lg text-gray-400 font-normal">
+                      (NBC)
+                    </span>
+                  </h3>
+                  <p className="text-purple-400 font-semibold mt-1">
+                    2001 – 2022
+                  </p>
+                </div>
+              </div>
+
+              {/* Entry 3 - LexisNexis (LEFT) */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-12 text-right">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    LexisNexis
+                  </h3>
+                  <p className="text-purple-400 font-semibold mt-1">
+                    2022 – 2023
+                  </p>
+                </div>
+                {/* Center dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                <div className="w-1/2 pl-12"></div>
+              </div>
+
+              {/* Entry 4 - Karamo Show (RIGHT) */}
+              <div className="mt-16 relative flex items-center">
+                <div className="w-1/2 pr-12"></div>
+                {/* Center dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                <div className="w-1/2 pl-12">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    Karamo Show{" "}
+                    <span className="text-lg text-gray-400 font-normal">
+                      (NBC)
+                    </span>
+                  </h3>
+                  <p className="text-purple-400 font-semibold mt-1">
+                    2022 – 2026
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center space-x-6 mt-16">
             <a
               href="https://www.linkedin.com/in/brian-thomas-video/"
               target="_blank"
@@ -370,7 +462,6 @@ const App = () => {
           </div>
         </div>
       </section>
-
       {/* Video Modal */}
       {selectedVideo && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
