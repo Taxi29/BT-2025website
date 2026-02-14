@@ -110,12 +110,7 @@ const App = () => {
             </a>
           </div>
           <p className="text-lg mt-16 mb-8 max-w-2xl mx-auto bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Emmy-nominated 25-year member of the Motion Picture Editors Guild. I
-            edit and create motion graphics that hook viewers in the first three
-            seconds and cut anything that doesn't move the story forward. From
-            national broadcast promos to social media campaigns, I've spent 25+
-            years writing copy, producing and turning ideas into video content
-            that grabs attention — and keeps it.
+            Emmy-nominated 25-year member of the Motion Picture Editors Guild.
           </p>
         </div>
       </header>
@@ -127,8 +122,12 @@ const App = () => {
             Featured Content
           </h2>
           <p className="text-xl text-center mb-12 text-gray-400 max-w-2xl mx-auto">
-            A curated selection of projects spanning broadcast, digital, and
-            corporate content with AI-enhanced production.
+            I edit and create motion graphics that hook viewers in the first
+            three seconds and cut everything that doesn't move the story
+            forward. From national broadcast promos to social media campaigns,
+            I've spent 25+ years writing voiceovers, producing raw footage and
+            turning ideas into video content that grabs attention — and keeps
+            it.
           </p>
         </div>
         {/* Category Filter */}
