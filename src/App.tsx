@@ -108,15 +108,15 @@ const App = () => {
               <Play size={20} />
               <span>View Tools</span>
             </a>
-            <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-300">
-              Emmy-nominated 25-year member of the Motion Picture Editors Guild.
-              I edit and create motion graphics that hook viewers in the first
-              three seconds and cut anything that doesn't move the story
-              forward. From national broadcast promos to social media campaigns,
-              I've spent 25+ years writing copy, producing and turning ideas
-              into video content that grabs attention — and keeps it.
-            </p>
           </div>
+          <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-300">
+            Emmy-nominated 25-year member of the Motion Picture Editors Guild. I
+            edit and create motion graphics that hook viewers in the first three
+            seconds and cut anything that doesn't move the story forward. From
+            national broadcast promos to social media campaigns, I've spent 25+
+            years writing copy, producing and turning ideas into video content
+            that grabs attention — and keeps it.
+          </p>
         </div>
       </header>
 
