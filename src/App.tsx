@@ -103,14 +103,14 @@ const App = () => {
             </a>
             <a
               href="#about"
-              className="flex items-center space-x-2 border border-white/30 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
+              className="flex items-center space-x-2 border border-white/30 mb-12 hover:bg-white/10 px-6 py-3 rounded-full transition-colors"
             >
               <Play size={20} />
               <span>View Tools</span>
             </a>
           </div>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300">
-            Emmy-nominated 25-year member of the Motion Picture Editors Guild.
+          <p className="text-xl text-center text-white max-w-2xl mx-auto">
+            Emmy-nominated 25-year member of the Motion Picture Editors Guild
           </p>
         </div>
       </header>
