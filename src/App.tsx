@@ -90,12 +90,8 @@ const App = () => {
             AI-powered Video Content Creator
           </p>
           <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-400">
-            I edit and create motion graphics that hook viewers in the first
-            three seconds and cut everything that doesn't move the story
-            forward. From national broadcast promos to social media campaigns,
-            I've spent 25+ years writing voiceovers, producing raw footage and
-            turning ideas into video content that grabs attention — and keeps
-            it.
+            Your brand needs attention grabbing videos, graphics, images, logos
+            and websites that use AI-powered creativity.
           </p>
           <div className="flex justify-center space-x-6">
             <a
@@ -113,7 +109,7 @@ const App = () => {
               <span>View Tools</span>
             </a>
           </div>
-          <p className="text-lg mt-16 mb-8 max-w-2xl mx-auto bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <p className="text-xl md:text-2xl mb-8 text-gray-300">
             Emmy-nominated 25-year member of the Motion Picture Editors Guild.
           </p>
         </div>
@@ -125,9 +121,10 @@ const App = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
             Featured Content
           </h2>
-          <p className="text-xl text-center mb-12 text-gray-400 max-w-2xl mx-auto">
-            Your brand needs attention grabbing videos, graphics, images, logos
-            and websites that use AI-powered creativity.
+          <p className="text-xl text-center mb-12 text-white max-w-2xl mx-auto">
+            From national broadcast promos to social media campaigns, I edit and
+            create motion graphics that hook viewers in the first three seconds
+            and cut everything that doesn't move the story forward.
           </p>
         </div>
         {/* Category Filter */}
@@ -192,9 +189,14 @@ const App = () => {
       {/* Additional Content Section */}
       <section id="additional" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mt-[-2rem] mb-12 text-white">
             More Content Across Platforms
           </h2>
+          <p className="text-xl text-center mb-12 text-white max-w-2xl mx-auto">
+            I've spent 25+ years taking raw footage, writing voiceover copy, and
+            turning ideas into video content that grabs attention — and keeps
+            it.
+          </p>
 
           {/* Digital Content Section */}
           <div className="mb-16">
