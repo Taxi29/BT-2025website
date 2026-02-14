@@ -186,11 +186,8 @@ const App = () => {
       <section id="additional" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
-            Additional Content
+            More Content Across Platforms
           </h2>
-          <p className="text-xl text-center mb-16 text-gray-400">
-            More content available upon request
-          </p>
 
           {/* Digital Content Section */}
           <div className="mb-16">
@@ -317,6 +314,9 @@ const App = () => {
               </a>
             </div>
           </div>
+          <p className="text-xl text-center mb-16 text-gray-400">
+            More content available upon request
+          </p>
         </div>
       </section>
 
