@@ -344,27 +344,38 @@ const App = () => {
           </p>
         </div>
       </section>
-
       {/* Bio Section */}
       <section id="bio" className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
-          {/* Bio Paragraph */}
-          <div className="mb-20 max-w-3xl mx-auto">
-            <p className="text-2xl text-center mb-8 text-white max-w-2xl mx-auto">
-              Emmy-nominated 25-year member of the{" "}
-              <span className="whitespace-nowrap">
-                Motion Picture Editors Guild
-              </span>
-            </p>
-            <div className="w-3/4 mx-auto h-px bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-40 mb-8"></div>
-            <p className="text-lg text-gray-300 max-w-4xl leading-relaxed mb-8 text-center">
-              From NBC national broadcast promos to social media campaigns, I
-              edit and create motion graphics that hook viewers in the first
-              three seconds and cut everything that doesn't move the story
-              forward. I've spent 25+ years taking raw footage, writing
-              voiceover copy, and turning ideas into video content that grabs
-              attention — and keeps it.
-            </p>
+          {/* Side by side: Image + Bio */}
+          <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
+            <div className="w-full md:w-1/3 h-60 overflow-hidden rounded-2xl ring-1 ring-white/10">
+              <img
+                src="/Thumbnail_Images/BTeditpic.jpg"
+                alt="Brian Thomas in the edit bay"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "50% center" }}
+              />
+            </div>
+
+            {/* Bio Text */}
+            <div className="w-full md:w-1/2">
+              <p className="text-2xl text-white font-semibold mb-6">
+                Emmy-nominated 25-year member of the{" "}
+                <span className="whitespace-nowrap">
+                  Motion Picture Editors Guild
+                </span>
+              </p>
+              <div className="w-3/4 h-px bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-40 mb-6"></div>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                From NBC national broadcast promos to social media campaigns, I
+                edit and create motion graphics that hook viewers in the first
+                three seconds and cut everything that doesn't move the story
+                forward. I've spent 25+ years taking raw footage, writing
+                voiceover copy, and turning ideas into video content that grabs
+                attention — and keeps it.
+              </p>
+            </div>
           </div>
 
           {/* Timeline */}
@@ -384,7 +395,6 @@ const App = () => {
                     2000 – 2007
                   </p>
                 </div>
-                {/* Center dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
                 <div className="w-1/2 pl-12"></div>
               </div>
@@ -392,7 +402,6 @@ const App = () => {
               {/* Entry 2 - Maury Povich Show (RIGHT) */}
               <div className="relative flex items-center">
                 <div className="w-1/2 pr-12"></div>
-                {/* Center dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
                 <div className="w-1/2 pl-12">
                   <h3 className="text-2xl md:text-3xl font-bold text-white">
@@ -417,15 +426,13 @@ const App = () => {
                     2022 – 2023
                   </p>
                 </div>
-                {/* Center dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
                 <div className="w-1/2 pl-12"></div>
               </div>
 
               {/* Entry 4 - Karamo Show (RIGHT) */}
-              <div className="mt-16 relative flex items-center">
+              <div className="relative flex items-center">
                 <div className="w-1/2 pr-12"></div>
-                {/* Center dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
                 <div className="w-1/2 pl-12">
                   <h3 className="text-2xl md:text-3xl font-bold text-white">
@@ -462,6 +469,7 @@ const App = () => {
           </div>
         </div>
       </section>
+
       {/* Video Modal */}
       {selectedVideo && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
