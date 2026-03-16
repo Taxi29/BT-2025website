@@ -118,6 +118,7 @@ const App = () => {
           </div>
         </div>
       </header>
+
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
@@ -187,7 +188,7 @@ const App = () => {
       <section id="additional" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl mb-12 font-bold text-center mb-12 text-white">
-            Content Across Platforms
+            Content Links
           </h2>
 
           {/* Digital Content Section */}
@@ -332,8 +333,7 @@ const App = () => {
           <h2 className="text-4xl font-bold mb-8 text-white">Video Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
             Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci
-            Resolve, DSLR/Mirrorless cameras(Canon, Sony, Blackmagic), Media
-            Encoding, OBS Studio, Studio Lighting, Teleprompting
+            Resolve, DSLR/Mirrorless cameras, Sony FX-3, Godox Lighting, OBS Studio, Teleprompting
           </p>
           <h2 className="text-4xl font-bold mb-8 text-white">
             Website Coding Tools
@@ -348,8 +348,8 @@ const App = () => {
       <section id="bio" className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           {/* Side by side: Image + Bio */}
-          <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
-            <div className="w-full md:w-1/3 h-60 overflow-hidden rounded-2xl ring-1 ring-white/10">
+<div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-20 mx-auto">
+  <div className="w-full md:w-1/3 h-60 overflow-hidden rounded-2xl ring-1 ring-white/10">
               <img
                 src="/Thumbnail_Images/BTeditpic.jpg"
                 alt="Brian Thomas in the edit bay"
@@ -360,14 +360,14 @@ const App = () => {
 
             {/* Bio Text */}
             <div className="w-full md:w-1/2">
-              <p className="text-2xl text-white font-semibold mb-6">
+              <p className="text-xl text-white font-semibold mb-6">
                 Emmy-nominated 25-year member of the{" "}
                 <span className="whitespace-nowrap">
                   Motion Picture Editors Guild
                 </span>
               </p>
               <div className="w-3/4 h-px bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-40 mb-6"></div>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-md text-gray-300 leading-relaxed">
                 From NBC national broadcast promos to social media campaigns, I
                 edit and create motion graphics that hook viewers in the first
                 three seconds and cut everything that doesn't move the story
@@ -378,72 +378,163 @@ const App = () => {
             </div>
           </div>
 
-          {/* Timeline */}
-          <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 opacity-40"></div>
+          {/* Staff and Freelance Clients - Side by Side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Staff Timeline */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+                Fulltime Projects
+              </h2>
+              <div className="relative">
+                {/* Vertical line */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 opacity-40"></div>
 
-            {/* Timeline entries */}
-            <div className="space-y-16">
-              {/* Entry 1 - New York Mets (LEFT) */}
-              <div className="relative flex items-center">
-                <div className="w-1/2 pr-12 text-right">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white">
-                    New York Mets
-                  </h3>
-                  <p className="text-purple-400 font-semibold mt-1">
-                    2000 – 2007
-                  </p>
+                {/* Timeline entries */}
+                <div className="space-y-12">
+                  {/* Entry 1 - New York Mets (LEFT) */}
+                  <div className="relative flex items-center">
+                    <div className="w-1/2 pr-8 text-right">
+                      <h3 className="text-xl md:text-2xl font-bold text-white">
+                        New York Mets
+                      </h3>
+                      <p className="text-purple-400 font-semibold mt-1 text-sm">
+                        2000 – 2007
+                      </p>
+                    </div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                    <div className="w-1/2 pl-8"></div>
+                  </div>
+
+                  {/* Entry 2 - Maury Povich Show (RIGHT) */}
+                  <div className="relative flex items-center">
+                    <div className="w-1/2 pr-8"></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                    <div className="w-1/2 pl-8">
+                      <h3 className="text-xl md:text-2xl font-bold text-white">
+                        Maury Povich Show{" "}
+                        <span className="text-sm text-gray-400 font-normal">
+                          (NBC)
+                        </span>
+                      </h3>
+                      <p className="text-purple-400 font-semibold mt-1 text-sm">
+                        2001 – 2022
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Entry 3 - LexisNexis (LEFT) */}
+                  <div className="relative flex items-center">
+                    <div className="w-1/2 pr-8 text-right">
+                      <h3 className="text-xl md:text-2xl font-bold text-white">
+                        LexisNexis
+                      </h3>
+                      <p className="text-purple-400 font-semibold mt-1 text-sm">
+                        2022 – 2023
+                      </p>
+                    </div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                    <div className="w-1/2 pl-8"></div>
+                  </div>
+
+                  {/* Entry 4 - Karamo Show (RIGHT) */}
+                  <div className="relative flex items-center">
+                    <div className="w-1/2 pr-8"></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                    <div className="w-1/2 pl-8">
+                      <h3 className="text-xl md:text-2xl font-bold text-white">
+                        Karamo Show{" "}
+                        <span className="text-sm text-gray-400 font-normal">
+                          (NBC)
+                        </span>
+                      </h3>
+                      <p className="text-purple-400 font-semibold mt-1 text-sm">
+                        2022 – 2026
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
-                <div className="w-1/2 pl-12"></div>
               </div>
+            </div>
 
-              {/* Entry 2 - Maury Povich Show (RIGHT) */}
-              <div className="relative flex items-center">
-                <div className="w-1/2 pr-12"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
-                <div className="w-1/2 pl-12">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white">
-                    Maury Povich Show{" "}
-                    <span className="text-lg text-gray-400 font-normal">
-                      (NBC)
-                    </span>
+            {/* Freelance Clients */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+                Freelance Projects
+              </h2>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    Amazon Web Services
                   </h3>
-                  <p className="text-purple-400 font-semibold mt-1">
-                    2001 – 2022
-                  </p>
                 </div>
-              </div>
-
-              {/* Entry 3 - LexisNexis (LEFT) */}
-              <div className="relative flex items-center">
-                <div className="w-1/2 pr-12 text-right">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white">
-                    LexisNexis
-                  </h3>
-                  <p className="text-purple-400 font-semibold mt-1">
-                    2022 – 2023
-                  </p>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">Apollo Global Management</h3>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
-                <div className="w-1/2 pl-12"></div>
-              </div>
-
-              {/* Entry 4 - Karamo Show (RIGHT) */}
-              <div className="relative flex items-center">
-                <div className="w-1/2 pr-12"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
-                <div className="w-1/2 pl-12">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white">
-                    Karamo Show{" "}
-                    <span className="text-lg text-gray-400 font-normal">
-                      (NBC)
-                    </span>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    EY Global Ltd.
                   </h3>
-                  <p className="text-purple-400 font-semibold mt-1">
-                    2022 – 2026
-                  </p>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    Fiserv
+                  </h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    Google Digital Studio
+                  </h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    KKR
+                  </h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">9/11 Museum</h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">Northwell Health</h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">Prudential</h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    Regeneron
+                  </h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">Avidbeer</h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    JetNation
+                  </h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">Newsport</h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    MetroGuide
+                  </h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    Inextv.com
+                  </h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">Brigham Hospital</h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">Abraham Law</h3>
+                </div>
+                <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
+                  <h3 className="text-base font-bold text-white">
+                    New Mountain Capital
+                  </h3>
                 </div>
               </div>
             </div>
