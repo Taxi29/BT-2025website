@@ -460,6 +460,7 @@ const App = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
                 Freelance Projects
+                <span className="text-lg md:text-xl font-normal block mt-1">(On-Set Live Production & Editing)</span>
               </h2>
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-white/5 hover:bg-white/10 rounded-lg p-3 transition-colors text-center">
