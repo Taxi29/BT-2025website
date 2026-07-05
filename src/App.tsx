@@ -376,12 +376,11 @@ const App = () => {
               </p>
               <div className="w-3/4 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-40 mb-6"></div>
               <p className="text-md text-gray-300 leading-relaxed">
-                From NBC national broadcast promos to social media campaigns, I
-                edit and create motion graphics that hook viewers in the first
-                three seconds and cut everything that doesn't move the story
+                I edit, produce, create motion graphics that hook viewers in the first
+                three seconds and cut out everything that doesn't move the story
                 forward. I've spent 25+ years taking raw footage, writing
                 voiceover copy, and turning ideas into video content that grabs
-                attention — and holds it.
+                attention — and holds it. From e-commerce streaming platforms to national television to corporate, social media and everything in between.
               </p>
             </div>
           </div>
