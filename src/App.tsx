@@ -340,7 +340,7 @@ const App = () => {
           </p>
           <h2 className="text-4xl font-bold mb-8 text-white">Video Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            Adobe Premiere Pro, Adobe AfterEffects, Davinci Resolve, Avid Media Composer, 
+            Adobe Premiere, Adobe AfterEffects, Davinci Resolve, Avid Media Composer, 
             Sony FX-3, 3-Point Lighting, Audio Recording, OBS Studio, Riverside, Teleprompting
           </p>
           <h2 className="text-4xl font-bold mb-8 text-white">
