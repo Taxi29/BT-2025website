@@ -381,7 +381,7 @@ const App = () => {
                 three seconds and cut everything that doesn't move the story
                 forward. I've spent 25+ years taking raw footage, writing
                 voiceover copy, and turning ideas into video content that grabs
-                attention — and keeps it.
+                attention — and holds it.
               </p>
             </div>
           </div>
