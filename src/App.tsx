@@ -78,12 +78,20 @@ const App = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-950">
       {/* Hero Section */}
-      <header className="relative h-screen flex items-center justify-center text-center text-white">
-        <div className="absolute inset-0 bg-black/50"></div>
+      <header className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/hero-reel.mp4"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
             Brian Thomas
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300">
@@ -134,7 +142,7 @@ const App = () => {
               onClick={() => handleCategoryChange(category)}
               className={`px-6 py-2 rounded-full transition-all ${
                 selectedCategory === category
-                  ? "bg-purple-600 text-white"
+                  ? "bg-blue-600 text-white"
                   : "bg-white/10 text-gray-300 hover:bg-white/20"
               }`}
             >
@@ -163,16 +171,16 @@ const App = () => {
                     <Play className="text-white ml-1" size={24} />
                   </div>
                 </div>
-                <div className="absolute top-4 right-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm">
+                <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                   {video.year}
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-xl font-semibold text-white group-hover:text-purple-300 transition-colors">
+                  <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
                     {video.title}
                   </h3>
-                  <span className="text-sm text-purple-400 bg-purple-400/20 px-2 py-1 rounded">
+                  <span className="text-sm text-blue-400 bg-blue-400/20 px-2 py-1 rounded">
                     {video.category}
                   </span>
                 </div>
@@ -206,7 +214,7 @@ const App = () => {
                 <span className="text-white font-semibold">
                   SonyMusic/NBCU Marketing
                 </span>
-                <div className="text-purple-400 mt-2">View on YouTube →</div>
+                <div className="text-blue-400 mt-2">View on YouTube →</div>
               </a>
               <a
                 href="https://vimeo.com/manage/videos/707804864"
@@ -217,7 +225,7 @@ const App = () => {
                 <span className="text-white font-semibold">
                   Karamo Show TikTok
                 </span>
-                <div className="text-purple-400 mt-2">View on TikTok →</div>
+                <div className="text-blue-400 mt-2">View on TikTok →</div>
               </a>
               <a
                 href="https://www.tiktok.com/@karamoshow"
@@ -228,7 +236,7 @@ const App = () => {
                 <span className="text-white font-semibold">
                   YouTube Original Series
                 </span>
-                <div className="text-purple-400 mt-2">View on YouTube →</div>
+                <div className="text-blue-400 mt-2">View on YouTube →</div>
               </a>
             </div>
           </div>
@@ -248,7 +256,7 @@ const App = () => {
                 <span className="text-white font-semibold">
                   HBO Documentary Films Pitch
                 </span>
-                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                <div className="text-blue-400 mt-2">View on Vimeo →</div>
               </a>
               <a
                 href="https://vimeo.com/551248645?share=copy"
@@ -259,7 +267,7 @@ const App = () => {
                 <span className="text-white font-semibold">
                   True Crime Stories
                 </span>
-                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                <div className="text-blue-400 mt-2">View on Vimeo →</div>
               </a>
               <a
                 href="https://vimeo.com/manage/videos/758039937"
@@ -270,7 +278,7 @@ const App = () => {
                 <span className="text-white font-semibold">
                   NBC National Television Promo
                 </span>
-                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                <div className="text-blue-400 mt-2">View on Vimeo →</div>
               </a>
             </div>
           </div>
@@ -290,7 +298,7 @@ const App = () => {
                 <span className="text-white font-semibold">
                   Lexis Nexis Training Series
                 </span>
-                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                <div className="text-blue-400 mt-2">View on Vimeo →</div>
               </a>
               <a
                 href="https://vimeo.com/469030095"
@@ -301,7 +309,7 @@ const App = () => {
                 <span className="text-white font-semibold">
                   Non-Profit Fundraising
                 </span>
-                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                <div className="text-blue-400 mt-2">View on Vimeo →</div>
               </a>
               <a
                 href="https://vimeo.com/manage/videos/86842569"
@@ -312,7 +320,7 @@ const App = () => {
                 <span className="text-white font-semibold">
                   Trade Conference Welcome Video
                 </span>
-                <div className="text-purple-400 mt-2">View on Vimeo →</div>
+                <div className="text-blue-400 mt-2">View on Vimeo →</div>
               </a>
             </div>
           </div>
@@ -332,8 +340,8 @@ const App = () => {
           </p>
           <h2 className="text-4xl font-bold mb-8 text-white">Video Tools</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            Adobe Premiere Pro, Adobe AfterEffects, Avid Media Composer, Davinci
-            Resolve, DSLR/Mirrorless cameras, Sony FX-3, Godox Lighting, OBS Studio, Teleprompting
+            Adobe Premiere Pro, Adobe AfterEffects, Davinci Resolve, Avid Media Composer, 
+            Sony FX-3, 3-Point Lighting, Audio Recording, OBS Studio, Riverside, Teleprompting
           </p>
           <h2 className="text-4xl font-bold mb-8 text-white">
             Website Coding Tools
@@ -366,7 +374,7 @@ const App = () => {
                   Motion Picture Editors Guild
                 </span>
               </p>
-              <div className="w-3/4 h-px bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-40 mb-6"></div>
+              <div className="w-3/4 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-40 mb-6"></div>
               <p className="text-md text-gray-300 leading-relaxed">
                 From NBC national broadcast promos to social media campaigns, I
                 edit and create motion graphics that hook viewers in the first
@@ -387,37 +395,37 @@ const App = () => {
               </h2>
               <div className="relative">
                 {/* Vertical line */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 opacity-40"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-transparent via-gray-400 to-transparent opacity-40"></div>
 
                 {/* Timeline entries */}
                 <div className="space-y-12">
-                  {/* Entry 1 - New York Mets (LEFT) */}
+                  {/* Entry 1 - Amazon Live (LEFT) */}
                   <div className="relative flex items-center">
                     <div className="w-1/2 pr-8 text-right">
                       <h3 className="text-xl md:text-2xl font-bold text-white">
-                        New York Mets
+                        Amazon Live
                       </h3>
-                      <p className="text-purple-400 font-semibold mt-1 text-sm">
-                        2000 – 2007
+                      <p className="text-blue-400 font-semibold mt-1 text-sm">
+                        2026 – Present
                       </p>
                     </div>
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900"></div>
                     <div className="w-1/2 pl-8"></div>
                   </div>
 
-                  {/* Entry 2 - Maury Povich Show (RIGHT) */}
+                  {/* Entry 2 - Karamo Show (RIGHT) */}
                   <div className="relative flex items-center">
                     <div className="w-1/2 pr-8"></div>
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900"></div>
                     <div className="w-1/2 pl-8">
                       <h3 className="text-xl md:text-2xl font-bold text-white">
-                        Maury Povich Show{" "}
+                        Karamo {" "}
                         <span className="text-sm text-gray-400 font-normal">
                           (NBC)
                         </span>
                       </h3>
-                      <p className="text-purple-400 font-semibold mt-1 text-sm">
-                        2001 – 2022
+                      <p className="text-blue-400 font-semibold mt-1 text-sm">
+                        2022 – 2026
                       </p>
                     </div>
                   </div>
@@ -428,29 +436,43 @@ const App = () => {
                       <h3 className="text-xl md:text-2xl font-bold text-white">
                         LexisNexis
                       </h3>
-                      <p className="text-purple-400 font-semibold mt-1 text-sm">
-                        2022 – 2023
+                      <p className="text-blue-400 font-semibold mt-1 text-sm">
+                        2022
                       </p>
                     </div>
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900"></div>
                     <div className="w-1/2 pl-8"></div>
                   </div>
 
-                  {/* Entry 4 - Karamo Show (RIGHT) */}
+                  {/* Entry 4 - Maury Povich Show (RIGHT) */}
                   <div className="relative flex items-center">
                     <div className="w-1/2 pr-8"></div>
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 ring-4 ring-slate-900"></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900"></div>
                     <div className="w-1/2 pl-8">
                       <h3 className="text-xl md:text-2xl font-bold text-white">
-                        Karamo Show{" "}
+                        Maury {" "}
                         <span className="text-sm text-gray-400 font-normal">
                           (NBC)
                         </span>
                       </h3>
-                      <p className="text-purple-400 font-semibold mt-1 text-sm">
-                        2022 – 2026
+                      <p className="text-blue-400 font-semibold mt-1 text-sm">
+                        2001 – 2022
                       </p>
                     </div>
+                  </div>
+
+                  {/* Entry 5 - New York Mets (LEFT) */}
+                  <div className="relative flex items-center">
+                    <div className="w-1/2 pr-8 text-right">
+                      <h3 className="text-xl md:text-2xl font-bold text-white">
+                        New York Mets
+                      </h3>
+                      <p className="text-blue-400 font-semibold mt-1 text-sm">
+                        2000 – 2007
+                      </p>
+                    </div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900"></div>
+                    <div className="w-1/2 pl-8"></div>
                   </div>
                 </div>
               </div>
@@ -545,7 +567,7 @@ const App = () => {
               href="https://www.linkedin.com/in/brian-thomas-video/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-purple-400 transition-colors"
+              className="text-gray-400 hover:text-blue-400 transition-colors"
             >
               <Linkedin size={24} />
             </a>
@@ -554,7 +576,7 @@ const App = () => {
                 navigator.clipboard.writeText("btcontentai@gmail.com");
                 alert("Email copied to clipboard");
               }}
-              className="text-gray-400 hover:text-purple-400 transition-colors bg-transparent border-none cursor-pointer"
+              className="text-gray-400 hover:text-blue-400 transition-colors bg-transparent border-none cursor-pointer"
             >
               <Mail size={24} />
             </button>
@@ -584,13 +606,13 @@ const App = () => {
                 className="w-full h-full"
               ></iframe>
             </div>
-            <div className="p-6 bg-gradient-to-r from-purple-900/50 to-pink-900/50">
+            <div className="p-6 bg-neutral-900">
               <h3 className="text-2xl font-bold text-white mb-2">
                 {selectedVideo.title}
               </h3>
               <p className="text-gray-300 mb-4">{selectedVideo.description}</p>
               <div className="flex items-center justify-between">
-                <span className="text-purple-400 bg-purple-400/20 px-3 py-1 rounded-full text-sm">
+                <span className="text-blue-400 bg-blue-400/20 px-3 py-1 rounded-full text-sm">
                   {selectedVideo.category}
                 </span>
                 <a
